@@ -24,7 +24,7 @@ public class Message implements Serializable {
     /**
      * 消息体（0-群消息, 1-私人消息）
      */
-    private Integer grouporown;
+    private Integer groupOrOwn;
 
     /**
      * 内容
@@ -34,32 +34,32 @@ public class Message implements Serializable {
     /**
      * 0 - 文本消息
      */
-    private Integer contenttype;
+    private Integer contentType;
 
     /**
      * 群id
      */
-    private String groupid;
+    private String groupId;
 
     /**
      * 创建用户 id
      */
-    private String userid;
+    private String userId;
 
     /**
      * 创建时间
      */
-    private Date createtime;
+    private Date createTime;
 
     /**
      * 更新时间
      */
-    private Date updatetime;
+    private Date updateTime;
 
     /**
      * 是否删除
      */
-    private Integer isdelete;
+    private Integer isDelete;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
