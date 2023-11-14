@@ -1,16 +1,23 @@
 package com.xinghe.project.service.impl;
 
+import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xinghe.project.controller.AIController;
 import com.xinghe.project.model.entity.Message;
+import com.xinghe.project.model.entity.MessageBody;
 import com.xinghe.project.model.req.MessageReq;
 import com.xinghe.project.service.MessageService;
 import com.xinghe.project.mapper.MessageMapper;
 import com.xinghe.project.util.AIUtils;
+import com.xinghe.project.util.HXUtils;
+import com.xinghe.project.util.HttpClientUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
 * @author 26258
@@ -36,6 +43,28 @@ public class MessageServiceImpl extends ServiceImpl<MessageMapper, Message>
         StringBuilder res = new StringBuilder();
         messages.forEach(res::append);
         return AIUtils.callAIGC(PROMPT, res.toString(), false);
+    }
+
+    @Override
+    public String sendMessage(MessageReq req, String msg) {
+        String userId = "user_Bot";
+        // /{org_name}/{app_name}/messages/chatgroups
+        String url = AIServiceImpl.URL_PREFIX + "messages/chatgroups";
+
+        List<String> toList = new ArrayList<>();
+        toList.add(req.getGroupId());
+        Map<String, String> bodyMap = new HashMap<>();
+        bodyMap.put("msg", msg);
+
+        MessageBody messageBody = new MessageBody();
+        messageBody.setFrom(userId);
+        messageBody.setTo(toList);
+        messageBody.setType("txt");
+        messageBody.setBody(bodyMap);
+
+        HttpClientUtils.hxPostRequest(url, HXUtils.headerMap, JSONUtil.toJsonStr(messageBody));
+        // todo: 处理Json
+        return "";
     }
 }
 

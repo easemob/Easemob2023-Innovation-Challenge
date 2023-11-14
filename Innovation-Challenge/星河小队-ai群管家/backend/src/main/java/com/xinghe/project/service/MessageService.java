@@ -10,5 +10,12 @@ import com.xinghe.project.model.req.MessageReq;
 * @createDate 2023-11-14 14:32:33
 */
 public interface MessageService extends IService<Message> {
-    public String doAIGC(MessageReq res);
+    String doAIGC(MessageReq res);
+
+    /**
+     * 向群聊中发送消息
+     * @param req
+     * @return
+     */
+    String sendMessage(MessageReq req, String msg);
 }
