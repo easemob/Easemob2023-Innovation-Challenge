@@ -1,10 +1,11 @@
 server:
   port: 8001
+#  address: 10.203.204.120
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     # todo: 后序改成自己的数据库 - 账户 - 密码
-    url: jdbc:mysql://localhost:3306/init
+    url: jdbc:mysql://43.143.138.8:3306/contest?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: 262585mysql
 mybatis-plus:

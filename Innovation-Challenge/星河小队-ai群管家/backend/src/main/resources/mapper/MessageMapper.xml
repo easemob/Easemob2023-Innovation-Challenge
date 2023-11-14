@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinghe.project.mapper.MessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.xinghe.project.model.entity.Message">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="grouporown" column="groupOrOwn" jdbcType="TINYINT"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="contenttype" column="contentType" jdbcType="TINYINT"/>
+            <result property="groupid" column="groupId" jdbcType="VARCHAR"/>
+            <result property="userid" column="userId" jdbcType="VARCHAR"/>
+            <result property="createtime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updatetime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isdelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,groupOrOwn,content,
+        contentType,groupId,userId,
+        createTime,updateTime,isDelete
+    </sql>
+
+    <select id="selectLatest" parameterType="com.xinghe.project.model.req.MessageReq" resultMap="BaseResultMap">
+        SELECT * FROM message
+                 WHERE groupId = #{groupId}
+                   AND groupOrOwn = 0
+                   AND isDelete = 0
+                 ORDER BY createTime DESC LIMIT #{offset}
+    </select>
+</mapper>
