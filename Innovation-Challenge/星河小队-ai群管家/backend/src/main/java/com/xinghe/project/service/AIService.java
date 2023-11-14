@@ -6,5 +6,5 @@ public interface AIService {
 
     boolean botHasOwn(BotAddReq req);
 
-    boolean addBot(BotAddReq req);
+    boolean ensureBotExist(BotAddReq req);
 }

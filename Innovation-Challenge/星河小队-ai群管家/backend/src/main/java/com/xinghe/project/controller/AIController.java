@@ -13,13 +13,17 @@ import com.alibaba.dashscope.utils.Constants;
 import com.alibaba.dashscope.utils.JsonUtils;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.xinghe.project.common.ErrorCode;
 import com.xinghe.project.common.R;
 import com.xinghe.project.common.RUtils;
 import com.xinghe.project.model.req.BotAddReq;
 import com.xinghe.project.model.req.MessageReq;
+import com.xinghe.project.service.AIService;
 import com.xinghe.project.service.MessageService;
+import com.xinghe.project.service.impl.AIServiceImpl;
 import com.xinghe.project.util.AIUtils;
 import com.xinghe.project.util.HttpClientUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,26 +41,34 @@ public class AIController {
     @Resource
     private MessageService messageService;
 
+    @Resource
+    private AIService aiService;
+
     @PostMapping("/summary")
     public R<String> askForSummary(@RequestBody MessageReq req) {
         String s = messageService.doAIGC(req);
-        // todo: 向群聊中发送消息
         messageService.sendMessage(req, s);
         return RUtils.success(s);
     }
 
     @PostMapping("/getAI")
-    public R<String> askForQuestion(String prompt, String content, Boolean b)
-            throws NoApiKeyException, InputRequiredException {
+    public R<String> askForQuestion(String prompt, String content, Boolean b) {
         String res = AIUtils.callAIGC(prompt, content, b);
-        //
-        return RUtils.success(res);
+        if (StringUtils.isNotBlank(res)) {
+            return RUtils.success(res);
+        } else {
+            return RUtils.error(ErrorCode.SYSTEM_ERROR, "err");
+        }
     }
 
     @PostMapping("/add")
-    public R<Boolean> addBot(BotAddReq req){
-
-        return RUtils.success(true);
+    public R<String> addBot(@RequestBody BotAddReq req) {
+        boolean res = aiService.ensureBotExist(req);
+        if (res) {
+            return RUtils.success("ok");
+        } else {
+            return RUtils.error(ErrorCode.SYSTEM_ERROR, "err");
+        }
     }
 
 

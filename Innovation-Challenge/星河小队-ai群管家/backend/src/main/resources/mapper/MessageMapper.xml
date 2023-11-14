@@ -6,14 +6,14 @@
 
     <resultMap id="BaseResultMap" type="com.xinghe.project.model.entity.Message">
             <id property="id" column="id" jdbcType="BIGINT"/>
-            <result property="grouporown" column="groupOrOwn" jdbcType="TINYINT"/>
+            <result property="groupOrOwn" column="groupOrOwn" jdbcType="TINYINT"/>
             <result property="content" column="content" jdbcType="VARCHAR"/>
-            <result property="contenttype" column="contentType" jdbcType="TINYINT"/>
-            <result property="groupid" column="groupId" jdbcType="VARCHAR"/>
-            <result property="userid" column="userId" jdbcType="VARCHAR"/>
-            <result property="createtime" column="createTime" jdbcType="TIMESTAMP"/>
-            <result property="updatetime" column="updateTime" jdbcType="TIMESTAMP"/>
-            <result property="isdelete" column="isDelete" jdbcType="TINYINT"/>
+            <result property="contentType" column="contentType" jdbcType="TINYINT"/>
+            <result property="groupId" column="groupId" jdbcType="VARCHAR"/>
+            <result property="userId" column="userId" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
     </resultMap>
 
     <sql id="Base_Column_List">
