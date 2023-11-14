@@ -1,6 +1,6 @@
-create database if not exists init;
+create database if not exists contest;
 
-use init;
+use contest;
 
 -- 用户表
 create table if not exists user
@@ -44,3 +44,19 @@ create table if not exists post
     updateTime    datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
     isDelete      tinyint  default 0                 not null comment '是否删除'
 ) comment '帖子';
+
+-- 消息表
+create table if not exists message
+(
+    id            bigint auto_increment comment 'id' primary key,
+    groupOrOwn    tinyint  default 0                 not null comment '消息体（0-群消息, 1-私人消息）',
+    content       text                               null comment '内容',
+    contentType   tinyint        default  0          not null comment '0 - 文本消息',
+    groupId       varchar(512)   default '1111'      not null comment '群id',
+    userId        varchar(512)   default '0000'      not null comment '创建用户 id',
+    createTime    datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    updateTime    datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    isDelete      tinyint  default 0                 not null comment '是否删除'
+    ) comment '消息';
+
+alter table message modify column content varchar(1024)  character set utf8mb4 collate utf8mb4_unicode_ci;
