@@ -10,14 +10,26 @@ import java.util.Map;
 @Slf4j
 public class HXUtils {
 
+    /**
+     * 通用头，不要添加元素
+     */
+    public static final HashMap<String, Object> headerMap = new HashMap<>();
+    public static String token =
+            "YWMtcW9_gIKYEe6wVzPMNR5G0WzBsmE0oDgVlttEeaLWFqQPJTzaVHpJyKaou1axvyieAgMAAAGLy7v0EwAAAABht9tlYEWUuwNtPd5bBgZsF38bvkWBuSbcp8DJgoc21Q";
+
+    static {
+        headerMap.put("Content-Type", "application/json");
+        headerMap.put("Accept","application/json");
+        headerMap.put("Authorization", "Bearer " + token);
+    }
+
+
     public static void main() {
         String url = "https://a1.easemob.com/1181231114210730/demo/token";
         String token = getToken(url);
         System.out.println(token);
     }
 
-    public static String token =
-            "YWMtcW9_gIKYEe6wVzPMNR5G0WzBsmE0oDgVlttEeaLWFqQPJTzaVHpJyKaou1axvyieAgMAAAGLy7v0EwAAAABht9tlYEWUuwNtPd5bBgZsF38bvkWBuSbcp8DJgoc21Q";
     /**
      * 获取token
      */

@@ -22,17 +22,6 @@ public class MessageController {
     @Resource
     private MessageService messageService;
 
-    @PostMapping("/getAI")
-    public R<String> askForQuestion(String prompt, String content, Boolean b)
-            throws NoApiKeyException, InputRequiredException {
-        String res = AIUtils.callAIGC(prompt, content, b);
-        return RUtils.success(res);
-    }
-
-    @PostMapping("/summary")
-    public R<String> askForSummary(@RequestBody MessageReq req) {
-        return RUtils.success(messageService.doAIGC(req));
-    }
 
     @PostMapping("sendMessage")
     public R<Boolean> sendMessage(@RequestBody Message message) {

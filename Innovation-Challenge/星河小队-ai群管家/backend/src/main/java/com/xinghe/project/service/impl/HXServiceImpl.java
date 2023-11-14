@@ -27,6 +27,11 @@ curl -X POST -H 'Accept: application/json' -H 'Authorization: Bearer YWMtcW9_gIK
 -d '{"username":"user2","password":"123","nickname":"testuser2"}'
 -d '{"username":"user1","password":"123","nickname":"testuser"}'
 
+curl -X POST -H 'Accept: application/json' -H 'Authorization: Bearer YWMtcW9_gIKYEe6wVzPMNR5G0WzBsmE0oDgVlttEeaLWFqQPJTzaVHpJyKaou1axvyieAgMAAAGLy7v0EwAAAABht9tlYEWUuwNtPd5bBgZsF38bvkWBuSbcp8DJgoc21Q'\
+ -i "https://a1.easemob.com/1181231114210730/demo/users" \
+-d '{"username":"user_Bot","password":"123456","nickname":"BOT_ROBOT"}'
+
+
 
 curl -X GET -H 'Accept: application/json' -H 'Authorization: Bearer YWMtcW9_gIKYEe6wVzPMNR5G0WzBsmE0oDgVlttEeaLWFqQPJTzaVHpJyKaou1axvyieAgMAAAGLy7v0EwAAAABht9tlYEWUuwNtPd5bBgZsF38bvkWBuSbcp8DJgoc21Q'\
  'https://a1.easemob.com/1181231114210730/demo/users?limit=2'
