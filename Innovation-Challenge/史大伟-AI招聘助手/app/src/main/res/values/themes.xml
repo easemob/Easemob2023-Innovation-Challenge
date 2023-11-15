@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Kangaroo_demo_for_kotlin"
+        parent="android:Theme.Material.Light.NoActionBar" >
+
+<!--        配置navigationBar 透明-->
+        <item name="android:navigationBarColor">
+            @android:color/transparent
+        </item>
+
+        <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
+<!--        配置statusBar透明-->
+        <item name="android:statusBarColor">
+            @android:color/transparent
+        </item>
+
+        <!-- Optional: set for a light status bar with dark content. -->
+        <item name="android:windowLightStatusBar">
+            true
+        </item>
+    </style>
+
+
+</resources>

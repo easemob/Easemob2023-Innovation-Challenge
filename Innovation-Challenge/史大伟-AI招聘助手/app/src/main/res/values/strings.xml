@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AI招聘助手</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_date_store">DateStoreActivity</string>
+</resources>
