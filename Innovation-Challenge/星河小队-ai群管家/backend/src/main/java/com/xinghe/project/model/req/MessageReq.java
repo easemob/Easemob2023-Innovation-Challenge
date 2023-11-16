@@ -8,5 +8,8 @@ public class MessageReq {
 
     private String groupId;
 
-    private Integer offset = 100;
+    /**
+     * 接口允许字符范围 [1, 6000]
+     */
+    private Integer offset = 20;
 }

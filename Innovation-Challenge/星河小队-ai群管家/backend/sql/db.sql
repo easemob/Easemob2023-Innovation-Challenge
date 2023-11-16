@@ -60,3 +60,4 @@ create table if not exists message
     ) comment '消息';
 
 alter table message modify column content varchar(1024)  character set utf8mb4 collate utf8mb4_unicode_ci;
+alter table message modify column userId varchar(1024)  character set utf8mb4 collate utf8mb4_unicode_ci;
