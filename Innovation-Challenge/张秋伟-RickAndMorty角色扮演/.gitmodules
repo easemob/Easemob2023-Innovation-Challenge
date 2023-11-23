@@ -1,0 +1,3 @@
+[submodule "kangaroo_flutter"]
+	path = kangaroo_flutter
+	url = git@gitee.com:dileber/kangaroo_flutter.git
