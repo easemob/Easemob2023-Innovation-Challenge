@@ -61,3 +61,13 @@ create table if not exists message
 
 alter table message modify column content varchar(1024)  character set utf8mb4 collate utf8mb4_unicode_ci;
 alter table message modify column userId varchar(1024)  character set utf8mb4 collate utf8mb4_unicode_ci;
+
+create table if not exists ai_prompt
+(
+    id            bigint auto_increment comment 'id' primary key,
+    prompt        varchar(512)  default ''           not null comment 'prompt',
+    `description` varchar(512)  default '待描述'      null comment 'prompt描述',
+    createTime    datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    updateTime    datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    isDelete      tinyint  default 0                 not null comment '是否删除'
+) comment '消息'  DEFAULT CHARSET=utf8;

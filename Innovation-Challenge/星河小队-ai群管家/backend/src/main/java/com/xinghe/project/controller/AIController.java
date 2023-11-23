@@ -16,9 +16,11 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.xinghe.project.common.ErrorCode;
 import com.xinghe.project.common.R;
 import com.xinghe.project.common.RUtils;
+import com.xinghe.project.model.entity.AiPrompt;
 import com.xinghe.project.model.req.BotAddReq;
 import com.xinghe.project.model.req.MessageReq;
 import com.xinghe.project.service.AIService;
+import com.xinghe.project.service.AiPromptService;
 import com.xinghe.project.service.MessageService;
 import com.xinghe.project.service.impl.AIServiceImpl;
 import com.xinghe.project.util.AIUtils;
@@ -30,9 +32,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
-import java.util.*;
 
 @RestController
 @RequestMapping("/bot")
@@ -43,6 +42,9 @@ public class AIController {
 
     @Resource
     private AIService aiService;
+
+    @Resource
+    private AiPromptService aiPromptService;
 
     @PostMapping("/summary")
     public R<String> askForSummary(@RequestBody MessageReq req) {
@@ -69,6 +71,13 @@ public class AIController {
         } else {
             return RUtils.error(ErrorCode.SYSTEM_ERROR, "err");
         }
+    }
+
+    @PostMapping("/ask")
+    public R<String> ask(String msg, Long id) {
+        AiPrompt prompt = aiPromptService.getById(id);
+        String s = AIUtils.callAIGC(prompt.getPrompt(), msg, false);
+        return RUtils.success(s);
     }
 
 
