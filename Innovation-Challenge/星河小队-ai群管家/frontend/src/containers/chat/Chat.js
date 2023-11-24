@@ -19,6 +19,7 @@ import StrangerActions from '@/redux/StrangerRedux'
 import RosterActions from '@/redux/RosterRedux'
 import BlacklistActions from '@/redux/BlacklistRedux'
 import VideoCallActions from '@/redux/VideoCallRedux'
+import AIBotActions from '@/redux/AIBotRedux'
 import WebIM from '@/config/WebIM'
 import { history } from '@/utils'
 import utils from '@/utils'
@@ -27,10 +28,13 @@ import AddAVMemberModal from '@/components/videoCall/AddAVMemberModal'
 import ModalComponent from '@/components/common/ModalComponent'
 import RecordAudio from '@/components/recorder/index'
 import UserInfoModal from '@/components/contact/UserInfoModal'
-import { MENTION_ALL } from '@/const/'
+import { MENTION_ALL, BOT_NAME } from '@/const/'
 import ReplyMessage from '@/components/chat/ReplyMessage'
 import GroupInput from '@/containers/chat/GroupInput'
+import ChatInput from '@/containers/chat/ChatInput'
+import CommandHelpModal from './CommandHelpModal'
 import { SendMessage, GroupSummary, RequestBot } from '@/config/api'
+import { AskBot } from '../../config/api'
 // import { getLinkPreview, getPreviewFromContent } from 'link-preview-js'
 // import fetch from 'isomorphic-unfetch'
 // import spotify from 'spotify-url-info'
@@ -92,7 +96,9 @@ class Chat extends React.Component {
             visible: false,
             checkedValue: '',
             showUserInfoMoadl: false,
+            showBotModal: false,
             mentionList: [],
+            showBotRoles: true,
         }
         this.userInfo = {}
         this.showEdit = false
@@ -203,7 +209,7 @@ class Chat extends React.Component {
 
     handleChange(e) {
         const { selectTab } = this.props.match.params
-        const v = chatType[selectTab] === 'groupchat' ? e : e?.target?.value
+        const v = e
         const splitValue = this.state?.value ? this.state?.value.split('') : []
         splitValue.pop()
         if (v == splitValue.join('')) {
@@ -215,22 +221,30 @@ class Chat extends React.Component {
         }
     }
 
-    handleCallBot(value) {
+    handleCallBot(value, isGroup) {
         const { match } = this.props
         const { selectItem, selectTab } = match.params
         const userId = WebIM.conn.context.userId
-        let cmd = value.split(' ')
-        if (cmd.length != 2) {
-            message.info("ai-bot 不支持当前命令");
+        let cmd = ""
+        let params = ""
+        if (isGroup) {
+            cmd = value.split(' ')
+            if (cmd.length < 2) {
+                message.info("ai-bot 不支持当前命令");
+                return
+            }
+            cmd = cmd[1]
+        } else {
+            cmd = value.substring(1).split(' ')
+            params = cmd.slice(1)
+            cmd = cmd[0]
         }
-        cmd = cmd[1]
         // console.log("call bot", selectItem, cmd, userId)
-        if (cmd === "summary") {
+        if (cmd === "summary" && isGroup) {
             GroupSummary(selectItem).then((res) => {
                 console.log('summary', res)
             })
-            return
-        } else if (cmd === "add") {
+        } else if (cmd === "add" && isGroup) {
             RequestBot(selectItem).then((res) => {
                 if (res === "ok") {
                     message.info("添加机器人成功")
@@ -238,9 +252,39 @@ class Chat extends React.Component {
                     message.info("添加机器人失败")
                 }
             })
-            return
+        } else if (cmd === "list" && !isGroup) {
+            if (this.props.aiRoles.length === 0) {
+                this.props.updateRoles()
+            }
+            this.setState({
+                showBotRoles: true
+            })
+            console.log("list cmd")
+        } else if (cmd === "use" && !isGroup && params.length == 1) {
+            const param = params[0]
+            this.props.setRole(param)
+            console.log("use cmd", param)
+        } else if (cmd === "ask" && !isGroup) {
+            const param = params.join(' ')
+            let msg = {
+                msg: value
+            }
+            this.props.sendTxtMessage(chatType[selectTab], selectItem, msg)
+            AskBot(param, this.props.userRole || '1', userId, selectItem)
+            console.log("ask cmd ", param)
+        } else if (cmd === "help") {
+            this.setState({
+                showBotModal: true
+            })
+        } else {
+            message.info("ai-bot 不支持当前命令 " + cmd)
         }
-        message.info("ai-bot 不支持当前命令 " + cmd)
+    }
+
+    handleHelpModalClose = () => {
+        this.setState({
+            showBotModal: false
+        })
     }
 
     handleSend(e, callBot = false) {
@@ -263,8 +307,8 @@ class Chat extends React.Component {
                     })
             }
             if (!value) return
-            if (callBot && isGroupChat) {
-                this.handleCallBot(value)
+            if (callBot) {
+                this.handleCallBot(value, isGroupChat)
             } else {
                 let msg = isGroupChat
                     ? {
@@ -898,6 +942,15 @@ class Chat extends React.Component {
                 <div className="x-chat-content-tip">
                     本应用仅用于环信产品功能开发测试，请勿用于非法用途。任何涉及转账、汇款、裸聊、网恋、网购退款、投资理财等统统都是诈骗，请勿相信！
                 </div>
+                {
+                    name === BOT_NAME && this.state.showBotRoles &&
+                    (<div className="x-chat-content-tip" style={{display:'flex',justifyContent:'space-between'}}>
+                        角色列表: {this.props.aiRoles.map((e) => {
+                            return (<span key={e.description}>{e.id}: {e.description}</span>)
+                        })}
+                        <span onClick={()=> {this.setState({showBotRoles: false})}}><i className="iconfont icon-cross"/></span>
+                    </div>)
+                }
                 <div className="x-chat-content" ref="x-chat-content" onScroll={this.handleScroll}>
                     {/* fixed bug of messageList.map(...) */}
                     {this.state.isLoaded && <div style={{ width: '150px', height: '30px', lineHeight: '30px', backgroundColor: '#888', color: '#fff', borderRadius: '15px', textAlign: 'center', margin: '10px auto' }}>{I18n.t('noMoreMessage')}</div>}
@@ -989,22 +1042,20 @@ class Chat extends React.Component {
                                     />
                                 </div></>
                         ) : (
-                            <Input
+                            <><ChatInput
                                 value={this.state.value}
-                                onChange={this.handleChange}
-                                onKeyPress={this.handleSend}
-                                placeholder={I18n.t('message')}
-                                addonAfter={
-                                    <i
-                                        className="fontello icon-paper-plane"
-                                        onClick={() => {
-                                            this.handleSend({ charCode: 13 })
-                                        }}
-                                        style={{ cursor: 'pointer' }}
-                                    />
-                                }
+                                handleChange={this.handleChange}
+                                handleSend={this.handleSend}
                                 ref={(node) => (this.input = node)}
-                            />
+                            /><div>
+                                <i
+                                    className="fontello icon-paper-plane"
+                                    onClick={() => {
+                                        this.handleSend({ charCode: 13 })
+                                    }}
+                                    style={{ cursor: 'pointer' }}
+                                />
+                            </div></>
                         )}
                         {/*<TextArea rows={2} />*/}
                     </div>
@@ -1030,6 +1081,15 @@ class Chat extends React.Component {
                     component={UserInfoModal}
                     onModalClose={this.handleInfoModalClose}
                 />
+
+                <ModalComponent 
+                    width={360}
+                    title="机器人命令列表"
+                    isGroup={chatType[selectTab] === 'groupchat'}
+                    visible={this.state.showBotModal}
+                    component={CommandHelpModal}
+                    onModalClose={this.handleHelpModalClose}
+                />
             </div >
         )
     }
@@ -1043,6 +1103,8 @@ export default connect(
         callStatus: state.callVideo.callStatus,
         entities: state.entities,
         reply: state.reply,
+        aiRoles: state.entities.aiBot.roleList,
+        userRole: state.entities.aiBot.selectedRole,
         state: state
     }),
     dispatch => ({
@@ -1072,5 +1134,7 @@ export default connect(
         setGid: (gid) => dispatch(VideoCallActions.setGid(gid)),
         hangup: () => dispatch(VideoCallActions.hangup()),
         replyMessage: (message) => dispatch(MessageActions.replyMessage(message)),
+        updateRoles: () => dispatch(AIBotActions.getSupportRoles()),
+        setRole: (role) => dispatch(AIBotActions.setRole(role))
     })
 )(Chat)

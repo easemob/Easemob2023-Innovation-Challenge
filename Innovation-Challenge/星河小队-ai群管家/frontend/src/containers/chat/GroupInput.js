@@ -34,8 +34,6 @@ class GroupInput extends React.Component {
     callBot: false,
   };
 
-  innerRef = React.createRef(null);
-
   isAtPrefix = () => {
     return this.state.prefix === "@"
   }
@@ -69,7 +67,6 @@ class GroupInput extends React.Component {
   };
 
   onSearch = (_, newPrefix) => {
-    console.log("newPrefix", newPrefix);
     this.setState({
       prefix: newPrefix,
       callBot: false,

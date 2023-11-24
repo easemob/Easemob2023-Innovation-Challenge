@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { Menu, Icon, Badge, Avatar } from 'antd'
 import ContactHead from './ContactHead'
 import WebIM from '@/config/WebIM'
-import { MENTION_ALL } from '@/const/'
+import { MENTION_ALL, BOT_NAME } from '@/const/'
 
 const SubMenu = Menu.SubMenu
 const MenuItemGroup = Menu.ItemGroup
 const defaultAvatar = 'https://download-sdk.oss-cn-beijing.aliyuncs.com/downloads/IMDemo/avatar/Image1.png'
-
+const botAvatar = 'https://chatglm.cn/img/pc_20speed-min.a4f2d94d.gif'
 
 
 const ContactItem = ({ chatType, items, collapse, hasLogo, mentionedGroupIdLit, removeMentionedGroupId, ...rest }) => {
@@ -23,6 +23,13 @@ const ContactItem = ({ chatType, items, collapse, hasLogo, mentionedGroupIdLit, 
         }
     }
 
+    const getDefaultAvatar = (uname) => {
+        if (uname === BOT_NAME) {
+            return botAvatar
+        }
+        return defaultAvatar
+    }
+
 
     const tabsItem = tabs.map(item =>
         <Menu.Item onClick={()=>{ clearGroupMentioned(item) }} key={chatType == 'chatroom' || chatType == 'group' ? item.id : item.name} className={tabCls} style={{ margin:0 }}>
@@ -30,7 +37,7 @@ const ContactItem = ({ chatType, items, collapse, hasLogo, mentionedGroupIdLit, 
             <div className="nav-text">
                 <div>
                     {chatType == 'contact' ? 
-                        <Avatar src={item.info.avatarurl||defaultAvatar} onClick={rest.onClickAvatar}/>:null}
+                        <Avatar src={item.info.avatarurl||getDefaultAvatar(item.name)} onClick={rest.onClickAvatar}/>:null}
                     <span style={{ marginLeft: '5px' }}>{item?.info?.nickname || item.name}</span>
                     {/*
                         <Badge
