@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xinghe.project.controller.AIController;
 import com.xinghe.project.model.entity.Message;
 import com.xinghe.project.model.entity.MessageBody;
+import com.xinghe.project.model.req.ChatMessageReq;
 import com.xinghe.project.model.req.MessageReq;
 import com.xinghe.project.service.MessageService;
 import com.xinghe.project.mapper.MessageMapper;
@@ -50,7 +51,7 @@ public class MessageServiceImpl extends ServiceImpl<MessageMapper, Message>
     }
 
     @Override
-    public String sendMessage(MessageReq req, String msg) {
+    public boolean sendGroupMessage(MessageReq req, String msg) {
         String userId = botName;
         // /{org_name}/{app_name}/messages/chatgroups
         String url = AIServiceImpl.URL_PREFIX + "messages/chatgroups";
@@ -71,11 +72,35 @@ public class MessageServiceImpl extends ServiceImpl<MessageMapper, Message>
             JSONObject jsonObject = JSONObject.parseObject(res);
             jsonObject = jsonObject.getJSONObject("data");
             String resId = jsonObject.getString(req.getGroupId());
-            if (resId != null) {
-                return "ok";
-            } else {
-                return "failed";
-            }
+            return resId != null;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public boolean sendChatMessage(ChatMessageReq req, String msg) {
+        String userId = botName;
+        // /{org_name}/{app_name}/messages/chatgroups
+        String url = AIServiceImpl.URL_PREFIX + "messages/users";
+
+        List<String> toList = new ArrayList<>();
+        toList.add(req.getToUserId());
+        Map<String, String> bodyMap = new HashMap<>();
+        bodyMap.put("msg", msg);
+
+        MessageBody messageBody = new MessageBody();
+        messageBody.setFrom(userId);
+        messageBody.setTo(toList);
+        messageBody.setType("txt");
+        messageBody.setBody(bodyMap);
+
+        String res = HttpClientUtils.hxPostRequest(url, HXUtils.headerMap, JSONUtil.toJsonStr(messageBody));
+        try {
+            JSONObject jsonObject = JSONObject.parseObject(res);
+            jsonObject = jsonObject.getJSONObject("data");
+            String resId = jsonObject.getString(req.getToUserId());
+            return resId != null;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

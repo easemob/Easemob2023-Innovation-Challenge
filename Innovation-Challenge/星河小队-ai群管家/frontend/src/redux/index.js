@@ -47,6 +47,7 @@ const rootReducer = combineReducers({
         blacklist: require('./BlacklistRedux').reducer,
         message: require('./MessageRedux').reducer,
         groupRequest: require('./GroupRequestRedux').reducer,
+        aiBot: require('./AIBotRedux').reducer, 
     }),
     common: require('./CommonRedux').reducer,
     login: require('./LoginRedux').reducer,

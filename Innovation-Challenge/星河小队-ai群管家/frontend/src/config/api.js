@@ -28,3 +28,21 @@ export function RequestBot(groupId, userId) {
     return res.data;
   })
 }
+
+export function PromptList() {
+  return WebIM.backendApi.get("/ai_prompt/list").then((res) => {
+    return res.data;
+  })
+}
+
+export function AskBot(content, promptId, userId, chatId) {
+  return WebIM.backendApi.post("/bot/ask", {
+    msg: content,
+    promptId: promptId,
+    toUserId: userId,
+    chatId: chatId,
+  }).then((res) => {
+    return res.data;
+  })
+}
+

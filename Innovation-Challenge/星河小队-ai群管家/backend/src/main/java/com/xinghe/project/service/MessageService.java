@@ -2,6 +2,7 @@ package com.xinghe.project.service;
 
 import com.xinghe.project.model.entity.Message;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xinghe.project.model.req.ChatMessageReq;
 import com.xinghe.project.model.req.MessageReq;
 
 /**
@@ -17,5 +18,7 @@ public interface MessageService extends IService<Message> {
      * @param req
      * @return
      */
-    String sendMessage(MessageReq req, String msg);
+    boolean sendGroupMessage(MessageReq req, String msg);
+
+    boolean sendChatMessage(ChatMessageReq req, String msg);
 }

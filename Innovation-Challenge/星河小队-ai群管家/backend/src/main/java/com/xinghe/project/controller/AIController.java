@@ -18,6 +18,7 @@ import com.xinghe.project.common.R;
 import com.xinghe.project.common.RUtils;
 import com.xinghe.project.model.entity.AiPrompt;
 import com.xinghe.project.model.req.BotAddReq;
+import com.xinghe.project.model.req.ChatMessageReq;
 import com.xinghe.project.model.req.MessageReq;
 import com.xinghe.project.service.AIService;
 import com.xinghe.project.service.AiPromptService;
@@ -26,10 +27,7 @@ import com.xinghe.project.service.impl.AIServiceImpl;
 import com.xinghe.project.util.AIUtils;
 import com.xinghe.project.util.HttpClientUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -49,8 +47,12 @@ public class AIController {
     @PostMapping("/summary")
     public R<String> askForSummary(@RequestBody MessageReq req) {
         String s = messageService.doAIGC(req);
-        messageService.sendMessage(req, s);
-        return RUtils.success(s);
+        boolean res = messageService.sendGroupMessage(req, s);
+        if (res) {
+            return RUtils.success("ok");
+        } else {
+            return RUtils.error(ErrorCode.SYSTEM_ERROR, "err");
+        }
     }
 
     @PostMapping("/getAI")
@@ -74,10 +76,21 @@ public class AIController {
     }
 
     @PostMapping("/ask")
-    public R<String> ask(String msg, Long id) {
-        AiPrompt prompt = aiPromptService.getById(id);
-        String s = AIUtils.callAIGC(prompt.getPrompt(), msg, false);
-        return RUtils.success(s);
+    public R<String> ask(@RequestBody ChatMessageReq messageReq) {
+        Long promptIdL = 1L;
+        try {
+            promptIdL = Long.parseLong(messageReq.getPromptId());
+        } catch (NumberFormatException e) {
+        }
+        AiPrompt prompt = aiPromptService.getById(promptIdL);
+        String s = AIUtils.callAIGC(prompt.getPrompt(), messageReq.getMsg(), false);
+        boolean res = messageService.sendChatMessage(messageReq, s);
+
+        if (res) {
+            return RUtils.success("ok");
+        } else {
+            return RUtils.error(ErrorCode.SYSTEM_ERROR, "err");
+        }
     }
 
 
