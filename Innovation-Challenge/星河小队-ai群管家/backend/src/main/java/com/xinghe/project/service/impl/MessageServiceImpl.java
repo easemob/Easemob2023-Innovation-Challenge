@@ -7,6 +7,7 @@ import com.xinghe.project.controller.AIController;
 import com.xinghe.project.model.entity.Message;
 import com.xinghe.project.model.entity.MessageBody;
 import com.xinghe.project.model.req.ChatMessageReq;
+import com.xinghe.project.model.req.GroupMessageReq;
 import com.xinghe.project.model.req.MessageReq;
 import com.xinghe.project.service.MessageService;
 import com.xinghe.project.mapper.MessageMapper;
@@ -75,6 +76,35 @@ public class MessageServiceImpl extends ServiceImpl<MessageMapper, Message>
             return resId != null;
         } catch (Exception e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public boolean userSendGroupMessage(GroupMessageReq req) {
+        String url = AIServiceImpl.URL_PREFIX + "messages/chatgroups";
+
+        // 向groupIdList中发消息
+        List<String> toList = new ArrayList<>();
+        toList.add(req.getGroupId());
+
+        Map<String, String> bodyMap = new HashMap<>();
+        bodyMap.put("msg", req.getMsg());
+
+        MessageBody messageBody = new MessageBody();
+        messageBody.setFrom(req.getUserId());
+        messageBody.setTo(toList);
+        messageBody.setType("txt");
+        messageBody.setBody(bodyMap);
+
+        String res = HttpClientUtils.hxPostRequest(url, HXUtils.headerMap, JSONUtil.toJsonStr(messageBody));
+        try {
+            JSONObject jsonObject = JSONObject.parseObject(res);
+            jsonObject = jsonObject.getJSONObject("data");
+            String resId = jsonObject.getString(req.getGroupId());
+            return resId != null;
+        } catch (Exception e) {
+            log.error("插入到数据库失败");
+            return false;
         }
     }
 
