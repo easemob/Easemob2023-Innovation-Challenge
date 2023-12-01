@@ -1,592 +1,79 @@
-# Get Started with Chat UIKit for Flutter
+# AI专家助手
+----
 
-## Overview
+开发环境：
+- Tools : VS Code
+- os : MacOS
+- code : dart
 
-Instant messaging connects people wherever they are and allows them to communicate with others in real time. With built-in user interfaces (UI) for the message list, the [Chat UI Samples](https://github.com/easemob/em_chat_uikit) enables you to quickly embed real-time messaging into your app without requiring extra effort on the UI.
- 
-This page shows a sample code to add one-to-one chat and group chat messaging into your app by using the Flutter Chat UI Samples.
-'em_chat_uikit' currently has two modular widgets:
+运行环境：
 
-`ChatConversationsView` ChatConversationsView lists the existing conversations. The avatar and nickname displayed on the conversation view can be returned through callbacks.
+- os : Android 7.1 +
 
-`ChatMessagesView` ChatMessagesView lists messages in the current conversation, including text, image, voice, and file messages. The avatar and nickname displayed on the message view can be returned through callbacks.
+项目包含内容：
 
-easemob offers an open-source em_chat_uikit project on GitHub. You can clone and run the project or refer to the logic in it to create projects integrating em_chat_uikit.
+- Flutter Project
+- 安装包
 
-Source code URL of em_chat_uikit for Flutter:
+第三方：
 
-https://github.com/easemob/em_chat_uikit
+- 环信IM sdk
+  - 单聊消息
+  - 消息扩展
+  - 发送前回调
+- minmax AI接口
 
-## Function
+## 项目背景
 
-The `em_chat_uikit` library provides the following functions:
+探索环信IM服务如何和AI相关的服务进行密切的配合，以达到提升专业人士的效能最大化。
+现存市面上大部分的AI主要是面向个人的，而当前的AI助手并不能准确无误的解决大部分人的问题，尤其在一些特定的
+领域，比如 编程，医疗等主页技能要求较高的方向，虽然的AI能够给出相应的回复，但是这些回复对于普通人来说，
+甄别其中的准确性依然存在一定的问题。该项目通过一般咨询者的信息，收集不同AI厂商的建议或者帮助信息，能够
+大大的提升相应的工作效率。进而实现专家的效率，而当前社会专家才是更大的瓶颈。
 
-- Sends and receives messages, displays messages, shows the unread message count, and clears messages. The text, image, emoji, file, and audio messages are supported.
-- Deletes conversations and messages. 
-- Customizes the UI. 
+## 功能列表
 
-<table>
-  <tr>
-    <td>Widget</td>
-    <td>Function</td>
-    <td>Description</td>
-  </tr>
-  <tr>
-    <td> ChatUIKit </td>
-    <td></td>
-    <td> The root of all widgets in ChatUIKit. </td>
-  </tr>
-    <td rowspan="2"> ChatConversationsView </td>
-    <td> Conversation list </td>
-    <td> Presents the conversation information, including the user's avatar and nickname, content of the last message, unread message count, and the time when the last message is sent or received.</td>
-  <tr>
-    <td>Delete conversation</td>
-    <td>Deletes the conversation from the conversation list.</td>
-  </tr>
-  <tr>
-    <td rowspan="4">ChatMessagesView</td>
-    <td>Message sender</td>
-    <td>Sends text, emoji, image, file, and voice messages.</td>
-  </tr>
-  <tr>
-    <td>Delete messages</td>
-    <td>Deletes messages.</td>
-  </tr>
-  <tr>
-    <td>Recall message</td>
-    <td>Recalls message that are sent within 120 seconds.</td>
-  </tr>
-  <tr>
-    <td>Display message</td>
-    <td>Displays one-to-one messages and group messages, including the user's avatar and nickname and the message's content, sending time or reception time, sending status, and read status. The text, image, emoji, file, voice, and video messages can be displayed.</td> 
-  </tr>
-</table>
+- 给出适当的建议，能够根据给出的提示辅助专家
 
+## 运行说明
 
-## Dependencies
-
-The following third-party UI libraries are used in em_chat_uikit:
-
-```dart
-dependencies:
-  im_flutter_sdk: 4.0.2
-  image_picker: 0.8.6+4
-  file_picker: 4.6.1
-  record: 4.4.4
-  audioplayers: 3.0.1
-  common_utils: 2.1.0
-```
-
-## Permissions
-
-### Android
-
-```dart
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-<uses-permission android:name="android.permission.WAKE_LOCK"/>
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-<uses-permission android:name="android.permission.CAMERA"/>
-<uses-permission android:name="android.permission.RECORD_AUDIO"/>
-```
-
-### iOS
-
-In `Info.plist`， add the following permissions:
-
-| Key | Type | Value |
-| :------------ | :----- | :------- | 
-| `Privacy - Microphone Usage Description` | String | For microphone access |
-| `Privacy - Camera Usage Description` | String | For camera access |
-| `Privacy - Photo Library Usage Description` | String | For photo library access |
-
-## Prevent code obfuscation
-
-In the `example/android/app/proguard-rules.pro` file, add the following lines to prevent code obfuscation:
+进入项目的expert目录，执行以下命令可以进行直接安装
 
 ```
--keep class com.hyphenate.** {*;}
--dontwarn  com.hyphenate.**
+cd expert
+flutter run 
 ```
+## 安装包
 
-## Integrate the UIKit
+[android安装包](install/app-release.apk)
 
-### pub.dev integration
+## 效果展示
 
-```dart
-flutter pub add em_chat_uikit
-flutter pub get
-```
+1. 咨询方
+咨询方的使用上和普通的用户完全一样，不需要特殊的处理
+![咨询方](doc/咨询方.jpg)
 
-### Local integration
+2. 专家方
 
-You can download the project to your computer and execute it.
+普通的简单业务咨询
 
-```dart
-dependencies:
-    em_chat_uikit:
-        path: `<#uikit path#>`
-```
+![简单咨询](doc/专家方.png)
 
-## Usage
+复杂的业务场景
 
-Before calling ChatUIKit, you need to make sure that the flutter chat SDK is initialized and the ChatUIKit widget is at the top of you widget tree. You can add it in the `MaterialApp` builder. 
+![复杂场景](doc/复杂示例.png)
 
-### ChatUIKit
+专家根据各方的提示，整合自己的理解和经验给出更加合理回答
 
-You must have a ChatUIKit widget at the top of you widget tree.
+![甄别整合信息](doc/专家审核整合.png)
 
-| Prop | Description |
-| :-------------- | :----- |
-| theme | Chat UIKit theme for setting component styles. If this prop is not set, the default style will be used.|
+- 发送者的消息建议
 
-```dart
-import 'package:em_chat_uikit/em_chat_uikit.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+## 设计实现
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      builder: (context, child){
-        return ChatUIKit(child: child!);
-      },
-      home: const MyHomePage(title: 'Flutter Demo'),
-    );
-  }
-}
-```
-
-### ChatConversationsView
-
-The 'ChatConversationsView' allows you to quickly display and manage the current conversations.
-
-| Prop| Description |
-| :-------------- | :----- |
-| controller | The ScrollController for the conversation list. |
-| itemBuilder | Conversation list item builder. Return a widget if you need to customize it. | 
-| avatarBuilder | Avatar builder. If this prop is not implemented or you return `null`, the default avatar will be used.|
-| nicknameBuilder | Nickname builder. If you don't set this prop or return `null`, the conversation ID is displayed. |  
-| onItemTap | The callback of the click event of the conversation list item. | 
-
-```dart
-class _ConversationsPageState extends State<ConversationsPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("Conversations")),
-      body: ChatConversationsView(
-        onItemTap: (conversation) {
-          Navigator.of(context)
-              .push(
-                MaterialPageRoute(
-                  builder: (ctx) => ChatPage(conversation),
-                ),
-              )
-              .then((value) => ChatUIKit.of(context)
-                  .conversationsController
-                  .loadAllConversations());
-        },
-      ),
-    );
-  }
-}
-```
-
-For more information, see `ChatConversationsView`.
-
-```dart
-  const ChatConversationsView({
-    super.key,
-    this.onItemTap,
-    this.controller,
-    this.reverse = false,
-    this.primary,
-    this.physics,
-    this.shrinkWrap = false,
-    this.padding,
-    this.cacheExtent,
-    this.dragStartBehavior = DragStartBehavior.down,
-    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
-    this.restorationId,
-    this.clipBehavior = Clip.hardEdge,
-    this.itemBuilder,
-    this.avatarBuilder,
-    this.nicknameBuilder,
-  });
-```
-
-### ChatMessagesView
-
-`ChatMessagesView` is used to manage text, image, emoji, file, and voice messages:
-- Sends and receives messages.
-- Deletes messages.
-- Recalls messages.
-
-| Prop | Prop Description |
-| :-------------- | :----- |
-| inputBar | Text input component. If you don't pass in this prop, `ChatInputBar` will be used by default.|
-| conversation | The conversation to which the messages belong. |
-| onTap | Message bubble click callback.|
-| onBubbleLongPress | Callback for holding a message bubble.|
-| onBubbleDoubleTap| Callback for double-clicking a message bubble.|
-| avatarBuilder | Avatar component builder.|
-| nicknameBuilder | Nickname component builder.|
-| itemBuilder| Message bubble. If you don't set this prop, the default bubble will be used. |
-| moreItems | Action items displayed after a message bubble is held down. If you return `null` in `onBubbleLongPress`, `moreItems` will be used. This prop involves three default actions: copy, delete, and recall. | 
-| messageListViewController | Message list controller. You are advised to use the default value. For details, see `ChatMessageListController`.  |
-| willSendMessage | Text message pre-sending callback. This callback needs to return a `ChatMessage` object.  |
-| onError| Error callbacks, such as no permissions.  |
-| enableScrollBar | Whether to enable the scroll bar. The scroll bar is enabled by default.  |
-| needDismissInputWidget | Callback for dismissing the input widget. If you use a custom input widget, dismiss the input widget when you receive this callback, for example, by calling `FocusNode.unfocus`. See `ChatInputBar`. |
-| inputBarMoreActionsOnTap | The callback for clicking the plus symbol next to the input box. You need to return the `ChatBottomSheetItems` list.     |  
-
-
-```dart
-class _ChatPageState extends State<ChatPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.conversation.id)),
-      body: SafeArea(
-        child: ChatMessagesView(conversation: widget.conversation),
-      ),
-    );
-  }
-}
-
-```
-
-For more information, see `ChatMessagesView`.
-
-```dart
-  const ChatMessagesView({
-    super.key,
-    this.inputBar,
-    required this.conversation,
-    this.onTap,
-    this.onBubbleLongPress,
-    this.onBubbleDoubleTap,
-    this.avatarBuilder,
-    this.nicknameBuilder,
-    this.titleAvatarBuilder,
-    this.moreItems,
-    this.messageListViewController,
-    this.willSendMessage,
-  });
-```
-
-#### Customize colors
-
-You can set the color when adding `ChatUIKit`. See `ChatUIKitTheme`.
-
-```dart
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      builder: (context, child) => ChatUIKit(
-        theme: ChatUIKitTheme(),
-        child: child!,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-```
-
-#### Add an avatar
-
-```dart
-class _MessagesPageState extends State<MessagesPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.conversation.id)),
-      body: SafeArea(
-        child: ChatMessagesView(
-          conversation: widget.conversation,
-          avatarBuilder: (context, userId) {
-            // Returns the avatar widget that you want to display.
-            return Container(
-              width: 30,
-              height: 30,
-              color: Colors.red,
-            );
-          },
-        ),
-      ),
-    );
-  }
-}
-```
-
-#### Add a nickname
-
-```dart
-class _MessagesPageState extends State<MessagesPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.conversation.id)),
-      body: SafeArea(
-        child: ChatMessagesView(
-          conversation: widget.conversation,
-          // Returns the nickname widget that you want to display.
-          nicknameBuilder: (context, userId) {
-            return Text(userId);
-          },
-        ),
-      ),
-    );
-  }
-}
-```
-
-#### Add the bubble click event
-
-```dart
-class _MessagesPageState extends State<MessagesPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.conversation.id)),
-      body: SafeArea(
-        child: ChatMessagesView(
-          conversation: widget.conversation,
-          onTap: (context, message) {
-            bubbleClicked(message);
-            return true;
-          },
-        ),
-      ),
-    );
-  }
-
-  void bubbleClicked(ChatMessage message) {
-    debugPrint('bubble clicked');
-  }
-}
-```
-
-### Customize the message item widget 
-
-```dart
-class _MessagesPageState extends State<MessagesPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.conversation.id)),
-      body: SafeArea(
-        child: ChatMessagesView(
-          conversation: widget.conversation,
-          itemBuilder: (context, model) {
-            if (model.message.body.type == MessageType.TXT) {
-              return CustomTextItemWidget(
-                model: model,
-                onTap: (context, message) {
-                  bubbleClicked(message);
-                  return true;
-                },
-              );
-            }
-          },
-        ),
-      ),
-    );
-  }
-
-  void bubbleClicked(ChatMessage message) {
-    debugPrint('bubble clicked');
-  }
-}
-
-class CustomTextItemWidget extends ChatMessageListItem {
-  const CustomTextItemWidget({super.key, required super.model, super.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    ChatTextMessageBody body = model.message.body as ChatTextMessageBody;
-
-    Widget content = Text(
-      body.content,
-      style: const TextStyle(
-        color: Colors.black,
-        fontSize: 50,
-        fontWeight: FontWeight.w400,
-      ),
-    );
-    return getBubbleWidget(content);
-  }
-}
-
-```
-
-### Customize the input widget
-
-```dart
-class _MessagesPageState extends State<MessagesPage> {
-  late ChatMessageListController _msgController;
-  final TextEditingController _textController = TextEditingController();
-  final FocusNode _focusNode = FocusNode();
-  @override
-  void initState() {
-    super.initState();
-    _msgController = ChatMessageListController(widget.conversation);
-  }
-
-  @override
-  void dispose() {
-    _focusNode.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.conversation.id)),
-      body: SafeArea(
-        child: ChatMessagesView(
-          conversation: widget.conversation,
-          messageListViewController: _msgController,
-          inputBar: inputWidget(),
-          needDismissInputWidget: () {
-            _focusNode.unfocus();
-          },
-        ),
-      ),
-    );
-  }
-
-  Widget inputWidget() {
-    return SizedBox(
-      height: 50,
-      child: Row(
-        children: [
-          Expanded(
-            child: TextField(
-              focusNode: _focusNode,
-              controller: _textController,
-            ),
-          ),
-          ElevatedButton(
-              onPressed: () {
-                final msg = ChatMessage.createTxtSendMessage(
-                    targetId: widget.conversation.id,
-                    content: _textController.text);
-                _textController.text = '';
-                _msgController.sendMessage(msg);
-              },
-              child: const Text('Send'))
-        ],
-      ),
-    );
-  }
-}
-
-```
-
-### Delete all Messages in the current conversation
-
-```dart
-class _MessagesPageState extends State<MessagesPage> {
-  late ChatMessageListController _msgController;
-
-  @override
-  void initState() {
-    super.initState();
-    _msgController = ChatMessageListController(widget.conversation);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.conversation.id),
-        actions: [
-          TextButton(
-              onPressed: () {
-                _msgController.deleteAllMessages();
-              },
-              child: const Text(
-                'Clear',
-                style: TextStyle(color: Colors.white),
-              ))
-        ],
-      ),
-      body: SafeArea(
-        child: ChatMessagesView(
-          conversation: widget.conversation,
-          messageListViewController: _msgController,
-        ),
-      ),
-    );
-  }
-}
-```
-
-### Customize actions displayed upon a click of the plus symbol in the conversation 
-
-```dart
-class _MessagesPageState extends State<MessagesPage> {
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.conversation.id),
-      ),
-      body: SafeArea(
-        child: ChatMessagesView(
-          conversation: widget.conversation,
-          inputBarMoreActionsOnTap: (items) {
-            ChatBottomSheetItem item =
-                ChatBottomSheetItem('more', onTap: customMoreAction);
-
-            return items + [item];
-          },
-        ),
-      ),
-    );
-  }
-
-  void customMoreAction() {
-    debugPrint('custom action');
-    Navigator.of(context).pop();
-  }
-}
-```
-
-## Sample Project
-
-If the demo is required, configure the following information in the `example/lib/main.dart` file:
-
-Replaces <#Your app key#>, <#Your created user#>, and <#User password#> and with your own App Key, user ID, and user token generated in easemob Console.
-
-```dart
-class ChatConfig {
-  static String appkey = <#Your app key#>;
-  static String userId = <#Your created user#>;
-  static String password = <#User password#>;
-}
-```
-
-## License
-
-The sample projects are under the MIT license.
+1. 整体的实现策略，如果AI的处理能够在3s内完成，比如 你好，这种简单的问句，则直接采用同步的方式，将建议的信息带到消息的内容中
+2. 如果是超过3s，即给提示将超过一定的时间，使用下面的步骤进行操作
+- 消息拦截，但是不返回错误，这样保证发起方能正常展示该消息
+- 消息接收方不能第一时间接收到消息
+- 待对应的AI建议到达后，发送消息给接收方并且附带上相应的AI建议
