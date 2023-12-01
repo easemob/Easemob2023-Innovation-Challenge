@@ -1,0 +1,46 @@
+# Miscellaneous
+/张超-AI专家助手/*.class
+/张超-AI专家助手/*.log
+/张超-AI专家助手/*.pyc
+/张超-AI专家助手/*.swp
+/张超-AI专家助手/.DS_Store
+/张超-AI专家助手/.atom/
+/张超-AI专家助手/.buildlog/
+/张超-AI专家助手/.history
+/张超-AI专家助手/.svn/
+/张超-AI专家助手/migrate_working_dir/
+/张超-AI专家助手/
+# IntelliJ related
+/张超-AI专家助手/*.iml
+/张超-AI专家助手/*.ipr
+/张超-AI专家助手/*.iws
+/张超-AI专家助手/.idea/
+/张超-AI专家助手/
+/张超-AI专家助手/
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+# Flutter/Dart/Pub related
+/张超-AI专家助手/**/doc/api/
+/张超-AI专家助手/**/ios/Flutter/.last_build_id
+/张超-AI专家助手/.dart_tool/
+/张超-AI专家助手/.flutter-plugins
+/张超-AI专家助手/.flutter-plugins-dependencies
+/张超-AI专家助手/.packages
+/张超-AI专家助手/.pub-cache/
+/张超-AI专家助手/.pub/
+/张超-AI专家助手//build/
+/张超-AI专家助手/
+/张超-AI专家助手/
+# Symbolication related
+/张超-AI专家助手/app.*.symbols
+/张超-AI专家助手/
+# Obfuscation related
+/张超-AI专家助手/app.*.map.json
+/张超-AI专家助手/
+# Android Studio will place build artifacts here
+/张超-AI专家助手//android/app/debug
+/张超-AI专家助手//android/app/profile
+/张超-AI专家助手//android/app/release
+/张超-AI专家助手//example/iOS/Podfile.lock
