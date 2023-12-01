@@ -1,0 +1,22 @@
+{
+  "uikitAudio": "Audio",
+  "uikitFile": "File",
+  "uikitVideo": "Video",
+  "uikitLocation": "Location",
+  "uikitImage": "Image",
+  "uikitCustom": "Custom",
+  "uikitCamera": "Camera",
+  "uikitAlbum": "Album",
+  "uikitFiles": "Files",
+  "uikitDelete":"Delete",
+  "uikitDeleteConversation": "Delete conversation",
+  "uikitConfirm":"Confirm",
+  "uikitCancel":"Cancel",
+  "holdToTalk": "Hold to Talk",
+  "releaseToSend": "Release to Send",
+  "releaseToCancel": "Release to Cancel",
+  "uikitCopy": "Copy",
+  "uikitDelete": "Delete",
+  "uikitRecall": "Recall",
+  "uikitSend": "Send"
+}
