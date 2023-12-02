@@ -57,6 +57,8 @@ class _MyHomePageState extends State<MyHomePage> {
   ScrollController scrollController = ScrollController();
   EMConversation? conversation;
   String _chatId = "";
+  String _userId = "";
+  String _password = "";
   final List<String> _logText = [];
   @override
   Widget build(BuildContext context) {
@@ -71,9 +73,28 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisSize: MainAxisSize.max,
           children: [
             const SizedBox(height: 10),
-            const Text("login userId: ${ChatConfig.userId}"),
-            const Text("password: ${ChatConfig.password}"),
-            const SizedBox(height: 10),
+            Row(children: [
+              const Text("userId: "),
+              Expanded(
+                child: TextField(
+                  decoration: const InputDecoration(
+                    hintText: "Enter userId",
+                  ),
+                  onChanged: (userId) => _userId = userId,
+                ),
+              ),
+            ]),
+            Row(children: [
+              const Text("password: "),
+              Expanded(
+                child: TextField(
+                  decoration: const InputDecoration(
+                    hintText: "Enter password",
+                  ),
+                  onChanged: (password) => _password = password,
+                ),
+              ),
+            ]),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -135,20 +156,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             MaterialStateProperty.all(Colors.lightBlue),
                       ),
                       child: const Text("START CHAT"),
-                    ),
-                    const SizedBox(width: 10),
-                    TextButton(
-                      onPressed: () {
-                        FocusScope.of(context).requestFocus(FocusNode());
-                        pushToCustomChatPage(_chatId);
-                      },
-                      style: ButtonStyle(
-                        foregroundColor:
-                            MaterialStateProperty.all(Colors.white),
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.lightBlue),
-                      ),
-                      child: const Text("CUSTOM CHAT"),
                     ),
                   ],
                 )
