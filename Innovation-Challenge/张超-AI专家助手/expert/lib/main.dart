@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   flex: 1,
                   child: TextButton(
                     onPressed: () {
-                      _signIn();
+                      _signIn(_userId, _password);
                     },
                     style: ButtonStyle(
                       foregroundColor: MaterialStateProperty.all(Colors.white),
@@ -233,15 +233,15 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void _signIn() async {
+  void _signIn(String userId, String password) async {
     _addLogToConsole('begin sign in...');
     try {
       bool judgmentPwdOrToken = false;
       do {
         if (ChatConfig.password.isNotEmpty) {
           await EMClient.getInstance.login(
-            ChatConfig.userId,
-            ChatConfig.password,
+            userId,
+            password,
           );
           judgmentPwdOrToken = true;
           break;
