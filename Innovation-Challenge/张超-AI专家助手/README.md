@@ -63,6 +63,8 @@ flutter run
 
 ![多AI反馈](doc/多AI专家方.png)
 
+![多AI反馈](doc/multiAI.png)
+
 复杂的业务场景
 
 ![复杂场景](doc/复杂示例.png)
