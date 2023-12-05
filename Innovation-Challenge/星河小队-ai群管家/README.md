@@ -22,6 +22,8 @@ app:
 
 ![app](./doc/app_login.mp4)
 
+![单聊](./doc/chat_aibot.mp4)
+
 通过命令方式激活机器人，可以很好的后续扩展功能
 
 

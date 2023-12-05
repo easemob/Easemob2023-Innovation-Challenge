@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+project-dir: project
+output-dir: lib/generated
+synthetic-package: false
+output-localization-file: uikit_localizations.dart

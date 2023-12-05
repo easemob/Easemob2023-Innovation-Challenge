@@ -1,0 +1,14 @@
+// 声明协议， 也支持 prota2，普遍使用proto3
+syntax = "proto3";
+
+/**
+ * 通过potorbuf 描述对象生成java类。
+ */
+option java_package = "com.kangaroo.ktdemo.data.model";//设置生成的类所在的包
+option java_multiple_files = true;//可能会有多个文件。
+
+message UserPreferences {
+  string userName = 1;
+  int32 age = 2;
+  string token = 3;
+}
