@@ -31,6 +31,6 @@ flutter build apk --release --dart-define EM_APP_KEY=1187221121120259#demo --dar
 
 你也可以通过下面的地址直接下载预编译版本， 预编译版本每次可以使用 5 次生成服务， 到达上线后卸载重新即可。
 
-[下载地址]()
+[下载地址](https://github.com/iceyliao/Easemob2023-Innovation-Challenge/releases/download/v1.0.0/app-release-unsigned.apk)
 
 ## License
