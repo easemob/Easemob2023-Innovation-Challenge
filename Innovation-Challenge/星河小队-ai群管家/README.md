@@ -11,6 +11,17 @@
 
 2. 单聊ai-bot聊天
 
+web:
+![单聊](./doc/chat_aibot.mp4)
+
+app:
+![单聊](./doc/app1.jpg)
+![单聊](./doc/app2.jpg)
+
+3. app登录逻辑
+
+![app](./doc/app_login.mp4)
+
 ![单聊](./doc/chat_aibot.mp4)
 
 通过命令方式激活机器人，可以很好的后续扩展功能
