@@ -120,6 +120,12 @@ extension ConversationVC:EMChatManagerDelegate{
                 alertController.addAction(cancelAction)
                 alertController.addAction(okAction)
                 UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+            }else if body.action == "Record" {
+                
+                let recordView = GetRecordView(frame: CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH))
+                recordView.from = msg.from
+                UIApplication.shared.keyWindow?.addSubview(recordView)
+    
             }
         }
     }

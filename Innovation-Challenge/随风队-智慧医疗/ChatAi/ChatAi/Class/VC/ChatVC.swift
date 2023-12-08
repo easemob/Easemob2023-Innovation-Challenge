@@ -38,6 +38,7 @@ class ChatVC: UIViewController,UITextViewDelegate {
         tableV.wf_registerCell(cell: ChatTextCell.self)
         tableV.wf_registerCell(cell: MineTextCell.self)
         tableV.wf_registerCell(cell: ArchiveCell.self)
+        tableV.wf_registerCell(cell: CustomCell.self)
 
         
         dataList = conv.loadMessagesStart(fromId: nil, count: 50, searchDirection: .up) ?? []
@@ -53,7 +54,9 @@ class ChatVC: UIViewController,UITextViewDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         if QianFanManage.shared.model?.role == "1" {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "获取用户档案", style: .plain, target: self, action: #selector(OnGetInfo))
+//
+//            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "获取用户档案", style: .plain, target: self, action: #selector(OnGetInfo))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "download"), style: .plain, target: self, action: #selector(OnGetInfo))
         }else{
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "生成记录", style: .plain, target: self, action: #selector(OnRecordClick))
         }
@@ -144,14 +147,37 @@ class ChatVC: UIViewController,UITextViewDelegate {
         
     }
     @objc func OnGetInfo(){
-        let msg = EMChatMessage(conversationID: conv.conversationId, body: EMCmdMessageBody(action: "Archive"), ext: nil)
-        EMClient.shared().chatManager?.send(msg, progress: nil, completion: { m, err in
-            if (err != nil) {
-                self.view.makeToast("发送成功")
-            }else{
-             
-            }
-        })
+        
+        let alertController = UIAlertController(title: "获取用户信息", message: "", preferredStyle: .actionSheet)
+        let action1 = UIAlertAction(title: "获取用户档案", style: .default) { (action) in
+            // 处理选项1的操作
+            let msg = EMChatMessage(conversationID: self.conv.conversationId, body: EMCmdMessageBody(action: "Archive"), ext: nil)
+            EMClient.shared().chatManager?.send(msg, progress: nil, completion: { m, err in
+                if (err != nil) {
+                    self.view.makeToast("发送成功")
+                }else{
+                 
+                }
+            })
+        }
+        let action2 = UIAlertAction(title: "获取用户咨询记录", style: .default) { (action) in
+            // 处理选项2的操作
+            let msg = EMChatMessage(conversationID: self.conv.conversationId, body: EMCmdMessageBody(action: "Record"), ext: nil)
+            EMClient.shared().chatManager?.send(msg, progress: nil, completion: { m, err in
+                if (err != nil) {
+                    self.view.makeToast("发送成功")
+                }else{
+                 
+                }
+            })
+        }
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+
+        alertController.addAction(action1)
+        alertController.addAction(action2)
+        alertController.addAction(cancelAction)
+        // 显示弹出框
+        present(alertController, animated: true, completion: nil)
     }
     @objc func keyboardWillShow(_ notification: Notification) {
         if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect {
@@ -281,24 +307,36 @@ extension ChatVC: UITableViewDelegate,UITableViewDataSource{
                 cell.updateStatus(isSucceed: true)
                 return cell
             }else if msg.body.type == .custom {
-                let cell = tableView.wf_dequeueReusableCell(indexPath: indexPath) as ArchiveCell
                 let b =  msg.body as? EMCustomMessageBody
                 if b?.event == "Archive" {
+                    let cell = tableView.wf_dequeueReusableCell(indexPath: indexPath) as CustomCell
                     guard let model = ArchiveModel.deserialize(from: b?.customExt) else{
                         return cell
                     }
+                    cell.titleLab.text = "用户档案"
                     cell.content.text = "姓名：\(model.name)\n性别：\(model.gender)\n年龄：\(2023-(Int(model.birth ) ?? 0))\n简介：\(model.info)"
                     cell.backgroundColor = .white
                     cell.content.textColor = .black
                     cell.content.textAlignment = .left
+                    return cell
+                }else if b?.event == "Record" {
+                    let cell = tableView.wf_dequeueReusableCell(indexPath: indexPath) as CustomCell
+                    cell.content.text = b?.customExt["data"] ?? ""
+                    cell.titleLab.text = "用户咨询记录"
+                    cell.backgroundColor = .white
+                    cell.content.textColor = .black
+                    cell.content.textAlignment = .left
+                    return cell
                 }else{
+                    let cell = tableView.wf_dequeueReusableCell(indexPath: indexPath) as ArchiveCell
                     cell.content.text = b?.event
                     cell.backgroundColor = .clear
                     cell.content.textColor = .darkGray
                     cell.content.textAlignment = .center
+                    return cell
                 }
  
-                return cell
+                
             }
         }
  
