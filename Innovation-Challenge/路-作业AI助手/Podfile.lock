@@ -1,0 +1,160 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AgoraRtcEngine_iOS/RtcBasic (4.1.1)
+  - Bugly (2.5.93)
+  - EaseCallKit (4.0.0):
+    - AgoraRtcEngine_iOS/RtcBasic (~> 4.1.1)
+    - HyphenateChat (>= 3.9.0)
+    - Masonry
+    - SDWebImage
+  - EaseIMKit (4.1.0):
+    - EMVoiceConvert (= 0.1.0)
+    - HyphenateChat (~> 4.1.0)
+  - EMVoiceConvert (0.1.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Google-Mobile-Ads-SDK (10.10.0):
+    - GoogleAppMeasurement (< 11.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (10.15.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.15.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.15.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.15.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.15.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleUserMessagingPlatform (2.1.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.5):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.5):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.11.5):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.11.5):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.11.5):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.5)"
+  - GoogleUtilities/Reachability (7.11.5):
+    - GoogleUtilities/Logger
+  - HyphenateChat (4.1.1)
+  - IQKeyboardManager (6.5.12)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.5)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.3.1)
+  - SDWebImage (5.18.1):
+    - SDWebImage/Core (= 5.18.1)
+  - SDWebImage/Core (5.18.1)
+  - SVProgressHUD (2.2.5)
+  - TFHpple (2.0.0)
+  - ZLPhotoBrowser-objc (1.0.4):
+    - SDWebImage
+
+DEPENDENCIES:
+  - AFNetworking
+  - Bugly
+  - EaseCallKit
+  - EaseIMKit (= 4.1.0)
+  - EMVoiceConvert
+  - FMDB
+  - Google-Mobile-Ads-SDK
+  - HyphenateChat
+  - IQKeyboardManager
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - SDWebImage
+  - SVProgressHUD
+  - TFHpple
+  - ZLPhotoBrowser-objc
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AgoraRtcEngine_iOS
+    - Bugly
+    - EaseCallKit
+    - EaseIMKit
+    - EMVoiceConvert
+    - FMDB
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - HyphenateChat
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - nanopb
+    - PromisesObjC
+    - SDWebImage
+    - SVProgressHUD
+    - TFHpple
+    - ZLPhotoBrowser-objc
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  AgoraRtcEngine_iOS: df216a18a01c30fba926565d889c9542319252ac
+  Bugly: b8715e6ec4004b7f7fbffab0643ba80545aee3da
+  EaseCallKit: c2d8ecfc09c2c491d03e6ce3cbba92e45e24c0db
+  EaseIMKit: dc346d178aeef5df0d7a0b6c212f93edc672d758
+  EMVoiceConvert: 32a0eaada94d93c151a5abd53ee174cd4e63b01f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Google-Mobile-Ads-SDK: 509e53bd31c6accb2d9c33b0eb66df1d54dda622
+  GoogleAppMeasurement: 722db6550d1e6d552b08398b69a975ac61039338
+  GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
+  GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
+  HyphenateChat: 95aa4abbad0e763f513acbe21ff9543f50b886cd
+  IQKeyboardManager: b1fd66ccf7a79095bdcc4a2735231586f744216e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  SDWebImage: ebdbcebc7933a45226d9313bd0118bc052ad458b
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
+  ZLPhotoBrowser-objc: c7657d3bc85ae231884e058d0e3638f619164736
+
+PODFILE CHECKSUM: d1d662a7c34747b34c68ef763d23449825a0d225
+
+COCOAPODS: 1.10.2

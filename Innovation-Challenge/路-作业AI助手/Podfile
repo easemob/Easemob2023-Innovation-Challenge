@@ -1,0 +1,24 @@
+
+platform :ios,'11.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target :"HomeworkHelper" do
+  pod 'HyphenateChat'
+  pod 'EaseIMKit', '4.1.0'
+  pod 'AFNetworking'
+  pod 'SVProgressHUD'
+  pod 'EMVoiceConvert'
+  
+  pod 'MBProgressHUD'
+  pod 'Masonry'
+  pod 'MJRefresh'
+  pod 'SDWebImage'
+  pod 'EaseCallKit'
+  pod 'FMDB'
+  pod 'Bugly'
+  pod 'TFHpple'
+  pod 'ZLPhotoBrowser-objc'
+  pod 'IQKeyboardManager'
+  pod 'Google-Mobile-Ads-SDK'
+end
+

@@ -1,0 +1,1 @@
+../../../EaseIMKit/EaseIMKit/EaseIMKit/Classes/Common/3rdParty/EasePhotoBrowser/Classes/EaseTapDetectingView.h

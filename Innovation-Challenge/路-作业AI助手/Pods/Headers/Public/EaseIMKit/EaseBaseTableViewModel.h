@@ -1,0 +1,1 @@
+../../../EaseIMKit/EaseIMKit/EaseIMKit/Classes/BaseTableViewController/EaseBaseTableViewModel.h
