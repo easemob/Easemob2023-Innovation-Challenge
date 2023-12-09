@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/sl_home"
+        android:title="数字人" />
+    <item
+        android:id="@+id/action_conversation"
+        android:icon="@drawable/sl_conversation"
+        android:title="会话" />
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/sp_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.imchat.chanttyai.views.NoSwipeViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sp_nav"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/sl_nav_text_color"
+        app:menu="@menu/navigation_items" />
+
+</LinearLayout>
