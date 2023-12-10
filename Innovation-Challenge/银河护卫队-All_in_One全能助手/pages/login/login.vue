@@ -2,7 +2,7 @@
   <view>
     <view class="login">
       <view class="login-panel">
-        <view class="logo">欢迎体验</view>
+        <view class="logo">硅智库</view>
         
         <uni-section title="温馨提醒" type="line" v-show="isRegister == true">
           <uni-notice-bar style="text-align: left;" text="用户名，长度不可超过 64 个字节。不可设置为空。支持以下字符集：\n☛ 26 个小写英文字母 a-z；\n☛ 26 个大写英文字母 A-Z；\n☛ 10 个数字 0-9；\n☛ “_”, “-”, “.”。" />
@@ -80,10 +80,11 @@
           success(res) {
               console.log(res)
               if (res.statusCode == 200) {
-                uni.showToast({
-                    title:reg?'注册成功':'登录成功'
-                })
                 if(reg){
+                  uni.showToast({
+                      title:'注册成功',
+                      duration:5000
+                  })
                   _this.loginOrRegister(false)
                   return
                 }

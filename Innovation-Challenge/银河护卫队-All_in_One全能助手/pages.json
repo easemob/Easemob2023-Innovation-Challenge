@@ -18,7 +18,7 @@
     {
 			"path": "pages/index/index",
 			"style": {
-		    "navigationBarTitleText" : "花花十三",
+		    "navigationBarTitleText" : "硅智库",
 		    "enablePullDownRefresh" : false
 			}
 		},
