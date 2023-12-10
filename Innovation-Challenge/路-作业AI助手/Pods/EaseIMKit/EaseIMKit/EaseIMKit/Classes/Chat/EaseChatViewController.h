@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<EaseChatViewControllerDelegate> delegate;
 
+@property (nonatomic,copy)NSString *client_ID;
+@property(nonatomic,copy)NSString *client_Screct;
+
 @property (nonatomic, strong) EMConversation *currentConversation;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
