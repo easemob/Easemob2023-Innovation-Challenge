@@ -109,7 +109,7 @@
 //                                       }];
     
     AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
-    [manager GET:@"https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=BaiDu_Client_ID&client_secret=Baidu_Client_Secret" parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager GET:@"https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=3TWOo6B79vZP2QhAlYxfYIWV&client_secret=CuVXaLsiPPW6C0uf20f0GGhpE07bpQ4j&" parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"请求BaiduTOKEN成功：%@",responseObject);
         
         NSDictionary *dic = responseObject;
@@ -125,11 +125,9 @@
                                          password:@"Aa123456"
                                        completion:^(NSString *aUsername, EMError *aError) {
         if(aError){
-            NSLog(@"登录失败 : %@",aError.errorDescription);
-//            [SVProgressHUD showAlertWithMessage:[NSString stringWithFormat:@"登录失败 : %@",aError.errorDescription]];
+           
         }else{
-            NSLog(@"登录成功 : %@",aUsername);
-//            [SVProgressHUD showAlertWithMessage:[NSString stringWithFormat:@"登录成功"]];
+           
         }
     }];
 }
@@ -140,11 +138,11 @@
         [self.navigationController pushViewController:c animated:true];
         c = nil;
     }
-    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"isFirst"]){
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"当前为参赛版本，正常使用前需先填入百度的client_id和client_secret以及百度千帆的client_id和client_id" preferredStyle:UIAlertControllerStyleAlert];
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"isFirst0"]){
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"由于本人的百度千帆大数据模型的免费额度已经被使用完😢，正常使用需要在EMChatViewController.m先填入百度千帆的client_id和client_secret" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             NSUserDefaults *s = [NSUserDefaults standardUserDefaults];
-            [s setObject:@"y" forKey:@"isFirst"];
+            [s setObject:@"y" forKey:@"isFirst0"];
             [s synchronize];
         }];
         [alert addAction:action];
