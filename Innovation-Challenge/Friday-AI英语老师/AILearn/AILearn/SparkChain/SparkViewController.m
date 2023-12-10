@@ -100,6 +100,7 @@
     //发音人，默认为”xiaoyan”，可以设置的参数列表可参考“合成发音人列表”
     [_iFlySpeechSynthesizer setParameter:@"Ryan"
      forKey: [IFlySpeechConstant VOICE_NAME]];
+    [_iFlySpeechSynthesizer setParameter:@"en_us" forKey:[IFlySpeechConstant LANGUAGE]];
     //保存合成文件名，如不再需要，设置为nil或者为空表示取消，默认目录位于library/cache下
     [_iFlySpeechSynthesizer setParameter:@"tts.pcm"
      forKey: [IFlySpeechConstant TTS_AUDIO_PATH]];
