@@ -979,7 +979,8 @@
 
 -(void)getAccessTK:(NSString *)text{
     AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
-    [manager GET:@"https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=BaiduQianFan_Client_ID&client_secret=BaiduQianFan_Client_Secret" parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    NSString *urlStr = [NSString stringWithFormat:@"https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=%@&client_secret=%@",_client_ID,_client_Screct];
+    [manager GET:urlStr parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *dic = responseObject;
 //        self->access_token = [dic objectForKey:@"access_token"];
 //        return [dic objectForKey:@"access_token"];
