@@ -1,0 +1,13 @@
+
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '16.0'
+
+install! 'cocoapods', :disable_input_output_paths => true
+target 'AILearn' do
+
+    use_frameworks!
+    pod 'AFNetworking'
+    pod 'HyphenateChat'
+    pod 'MBProgressHUD'
+end
