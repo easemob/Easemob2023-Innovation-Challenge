@@ -8,6 +8,7 @@
 #import "AppDelegate.h"
 #import <HyphenateChat/HyphenateChat.h>
 #import "NETM.h"
+#import <iflyMSC/IFlyMSC.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self registerHy];
+    //Appid是应用的身份信息，具有唯一性，初始化时必须要传入Appid。
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@", @"2a30e3a4"];
+    [IFlySpeechUtility createUtility:initString];
     return YES;
 }
 -(void)registerHy{

@@ -12,6 +12,7 @@
 #import<CoreTelephony/CTCellularData.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "NETM.h"
+#import <iflyMSC/IFlyMSC.h>
 
 #define APPID @"2a30e3a4"
 #define APIKEY @"d3d8c27822664f3f9cf9f4c30312c5d6"
@@ -19,7 +20,7 @@
 
 
 
-@interface SparkViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,LLMCallback>
+@interface SparkViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,LLMCallback,IFlySpeechSynthesizerDelegate>
 {
     bool _isKeyboardDidShow;
     dispatch_semaphore_t _sema;
@@ -34,6 +35,7 @@
 
 @property (nonatomic, strong) UIButton * buttonInit;
 
+@property (nonatomic, strong) IFlySpeechSynthesizer* iFlySpeechSynthesizer;
 @end
 
 @implementation SparkViewController
@@ -81,6 +83,27 @@
     } else {
         [self updateToolbar];
     }
+    
+   
+    
+    //获取语音合成单例
+    _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance];
+    //设置协议委托对象
+    _iFlySpeechSynthesizer.delegate = self;
+    //设置合成参数
+    //设置在线工作方式
+    [_iFlySpeechSynthesizer setParameter:[IFlySpeechConstant TYPE_CLOUD]
+     forKey:[IFlySpeechConstant ENGINE_TYPE]];
+    //设置音量，取值范围 0~100
+    [_iFlySpeechSynthesizer setParameter:@"50"
+    forKey: [IFlySpeechConstant VOLUME]];
+    //发音人，默认为”xiaoyan”，可以设置的参数列表可参考“合成发音人列表”
+    [_iFlySpeechSynthesizer setParameter:@"Ryan"
+     forKey: [IFlySpeechConstant VOICE_NAME]];
+    //保存合成文件名，如不再需要，设置为nil或者为空表示取消，默认目录位于library/cache下
+    [_iFlySpeechSynthesizer setParameter:@"tts.pcm"
+     forKey: [IFlySpeechConstant TTS_AUDIO_PATH]];
+    //启动合成会话
 }
 
 - (void)syncSparkChain{
@@ -272,7 +295,13 @@
     [cell updateCell:(message.sender == SPARK) text:message.content];
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SparkMessage * message = self.dataSources[indexPath.row];
+    [_iFlySpeechSynthesizer startSpeaking: message.content];
+}
+-(void)onCompleted:(IFlySpeechError *)error{
+    
+}
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     [self.inputTF resignFirstResponder];
 }
@@ -327,7 +356,9 @@
         self.tableview.frame = frame;
         [self.tableview setContentOffset:CGPointMake(0, self.tableview.contentSize.height) animated:YES];
     }];
-    _isKeyboardDidShow = true;
+    if(height > 100){
+        _isKeyboardDidShow = true;
+    }
 }
 
 - (void)keyboardWillHide:(NSNotification *) notification {

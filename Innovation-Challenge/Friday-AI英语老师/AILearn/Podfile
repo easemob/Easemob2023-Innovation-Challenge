@@ -10,4 +10,5 @@ target 'AILearn' do
     pod 'AFNetworking'
     pod 'HyphenateChat'
     pod 'MBProgressHUD'
+    pod 'iflyMSC'
 end
