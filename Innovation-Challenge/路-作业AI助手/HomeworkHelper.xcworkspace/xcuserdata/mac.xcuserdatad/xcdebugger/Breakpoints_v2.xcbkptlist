@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "78115F7E-BB17-4A75-9E2C-18FAA494C5E8"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CD8630B-E556-410F-BD93-4CA4AD2022CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "827"
+            endingLineNumber = "827"
+            landmarkName = "-messagesInfoDidRecall:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9CD8630B-E556-410F-BD93-4CA4AD2022CB - 65ba51ff7c99d76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseChatViewController messagesInfoDidRecall:]"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "827"
+                  endingLineNumber = "827"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "9CD8630B-E556-410F-BD93-4CA4AD2022CB - b09405733beba66f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[EaseChatViewController messagesInfoDidRecall:]_block_invoke"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "828"
+                  endingLineNumber = "828"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  uuid = "9CD8630B-E556-410F-BD93-4CA4AD2022CB - 2040ea2f4cfdb6df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseChatViewController messagesInfoDidRecall:]"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "827"
+                  endingLineNumber = "827"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "9CD8630B-E556-410F-BD93-4CA4AD2022CB - 968f4a4380df8d84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[EaseChatViewController messagesInfoDidRecall:]_block_invoke"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "828"
+                  endingLineNumber = "828"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  uuid = "9CD8630B-E556-410F-BD93-4CA4AD2022CB - a76f1b71b7134695"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseChatViewController messagesInfoDidRecall:]"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/%E8%B7%AF-%E4%BD%9C%E4%B8%9AAI%E5%8A%A9%E6%89%8B/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "827"
+                  endingLineNumber = "827"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "9CD8630B-E556-410F-BD93-4CA4AD2022CB - 11a0bb1d7b317dca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[EaseChatViewController messagesInfoDidRecall:]_block_invoke"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/%E8%B7%AF-%E4%BD%9C%E4%B8%9AAI%E5%8A%A9%E6%89%8B/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "828"
+                  endingLineNumber = "828"
+                  offsetFromSymbolStart = "86">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52358952-3504-4362-8773-C107F26C5D41"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "855"
+            endingLineNumber = "855"
+            landmarkName = "-msgStatusDidChange:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EE76975-02F0-4687-BED6-65B4F80F0515"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "886"
+            endingLineNumber = "886"
+            landmarkName = "-onConversationRead:to:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CE644E7-7A67-4231-9FD4-DFEB967BDFF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "803"
+            endingLineNumber = "803"
+            landmarkName = "-messagesDidReceive:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCBAC2D8-6025-4A44-B1E1-EF2DC1D6F676"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "805"
+            endingLineNumber = "805"
+            landmarkName = "-messagesDidReceive:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE464742-0A36-43ED-BAB1-621D5ACA5B87"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE464742-0A36-43ED-BAB1-621D5ACA5B87 - b8e74ed931ef6d37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseChatViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "292"
+                  endingLineNumber = "292"
+                  offsetFromSymbolStart = "660">
+               </Location>
+               <Location
+                  uuid = "CE464742-0A36-43ED-BAB1-621D5ACA5B87 - 4c3aa2a711ab4ba6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__58-[EaseChatViewController tableView:cellForRowAtIndexPath:]_block_invoke"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "292"
+                  endingLineNumber = "292"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C42F832-49A1-4034-B516-4D4230D26BC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5C42F832-49A1-4034-B516-4D4230D26BC6 - b8e74ed931ef6ed2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseChatViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "295"
+                  endingLineNumber = "295"
+                  offsetFromSymbolStart = "933">
+               </Location>
+               <Location
+                  uuid = "5C42F832-49A1-4034-B516-4D4230D26BC6 - 9f0e18ba53f19cee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__58-[EaseChatViewController tableView:cellForRowAtIndexPath:]_block_invoke_2"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "295"
+                  endingLineNumber = "295"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37B1F22A-482E-4F3A-8395-3CE0B3D6A7A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "37B1F22A-482E-4F3A-8395-3CE0B3D6A7A7 - b8e74ed931ef6e90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseChatViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "297"
+                  endingLineNumber = "297"
+                  offsetFromSymbolStart = "973">
+               </Location>
+               <Location
+                  uuid = "37B1F22A-482E-4F3A-8395-3CE0B3D6A7A7 - 9f0e18ba53f07cad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__58-[EaseChatViewController tableView:cellForRowAtIndexPath:]_block_invoke_3"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "297"
+                  endingLineNumber = "297"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3575D4F-FF3D-4517-A618-127AF96B3F82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C3575D4F-FF3D-4517-A618-127AF96B3F82 - b8e74ed931ef6e3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseChatViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "1105">
+               </Location>
+               <Location
+                  uuid = "C3575D4F-FF3D-4517-A618-127AF96B3F82 - 9f0e18ba53f05c01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__58-[EaseChatViewController tableView:cellForRowAtIndexPath:]_block_invoke_4"
+                  moduleName = "HomeworkHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/HomeworkHelper/Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1E55D67-B0F3-41E7-B6F6-6287F1C574B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB796802-79CC-4BF6-B7C0-CA6E096E020A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "597FC137-FA24-4C05-9C06-CC8FB5016FA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3737778-944E-4045-AA89-8CE6143C13F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/EaseChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

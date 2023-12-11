@@ -1,0 +1,1 @@
+../../../EaseIMKit/EaseIMKit/EaseIMKit/Classes/Contacts/Models/EaseContactModel.h

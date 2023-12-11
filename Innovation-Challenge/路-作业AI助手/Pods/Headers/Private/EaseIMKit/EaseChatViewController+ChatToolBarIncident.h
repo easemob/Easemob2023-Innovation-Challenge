@@ -1,0 +1,1 @@
+../../../EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/ChatExtComponents/ChatToolBarComponents/ChatToolBarComponentsIncident/EaseChatViewController+ChatToolBarIncident.h

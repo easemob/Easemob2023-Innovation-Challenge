@@ -1,0 +1,1 @@
+../../../EaseIMKit/EaseIMKit/EaseIMKit/Classes/Chat/ChatExtComponents/ChatEmojiUtil/Emoticon/EaseChatBarEmoticonView.h

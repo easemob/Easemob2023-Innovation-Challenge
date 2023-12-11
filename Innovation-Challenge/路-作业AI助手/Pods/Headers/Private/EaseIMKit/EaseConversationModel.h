@@ -1,0 +1,1 @@
+../../../EaseIMKit/EaseIMKit/EaseIMKit/Classes/Conversations/Models/EaseConversationModel.h
