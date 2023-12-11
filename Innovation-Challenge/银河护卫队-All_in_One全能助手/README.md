@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/supmaster/Easemob2023-Innovation-Challenge">
-    <img src="Screenshots/bot.png" alt="Logo" width="80" height="80">
+    <img src="./Screenshots/bot.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">硅智库</h3>
