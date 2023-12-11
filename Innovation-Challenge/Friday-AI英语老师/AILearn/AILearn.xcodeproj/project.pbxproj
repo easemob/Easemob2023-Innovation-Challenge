@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE7D2292E91F56B10F582B13 /* Pods_AILearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0995D55A09717B5F92526D /* Pods_AILearn.framework */; };
+		F50675422B0F54F600FD51F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F50675412B0F54F600FD51F5 /* AppDelegate.m */; };
+		F50675452B0F54F600FD51F5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F50675442B0F54F600FD51F5 /* SceneDelegate.m */; };
+		F50675482B0F54F600FD51F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50675472B0F54F600FD51F5 /* ViewController.m */; };
+		F506754B2B0F54F600FD51F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50675492B0F54F600FD51F5 /* Main.storyboard */; };
+		F506754D2B0F54F800FD51F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F506754C2B0F54F800FD51F5 /* Assets.xcassets */; };
+		F50675502B0F54F800FD51F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F506754E2B0F54F800FD51F5 /* LaunchScreen.storyboard */; };
+		F50675532B0F54F800FD51F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F50675522B0F54F800FD51F5 /* main.m */; };
+		F506755B2B14D09700FD51F5 /* NETM.m in Sources */ = {isa = PBXBuildFile; fileRef = F506755A2B14D09700FD51F5 /* NETM.m */; };
+		F506755E2B14D5D200FD51F5 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F506755D2B14D5D200FD51F5 /* SettingViewController.m */; };
+		F50675632B14DDD500FD51F5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50675622B14DDD400FD51F5 /* CoreTelephony.framework */; };
+		F50675642B14E06A00FD51F5 /* SparkChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50675602B14DDB900FD51F5 /* SparkChain.framework */; };
+		F50675652B14E06A00FD51F5 /* SparkChain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F50675602B14DDB900FD51F5 /* SparkChain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F52978712B1759E200218DA0 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52978702B1759E200218DA0 /* ChatViewController.m */; };
+		F52978742B17600600218DA0 /* UIColor+FFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F52978732B17600600218DA0 /* UIColor+FFColor.m */; };
+		F529787F2B24ACDD00218DA0 /* SparkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F529787C2B24ACDD00218DA0 /* SparkTableViewCell.m */; };
+		F52978802B24ACDD00218DA0 /* SparkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F529787D2B24ACDD00218DA0 /* SparkViewController.m */; };
+		F52978812B24ACDD00218DA0 /* SparkMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F529787E2B24ACDD00218DA0 /* SparkMessage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F50675662B14E06A00FD51F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F50675652B14E06A00FD51F5 /* SparkChain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21761D6206201DE3FA9CBDF6 /* Pods-AILearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AILearn.debug.xcconfig"; path = "Target Support Files/Pods-AILearn/Pods-AILearn.debug.xcconfig"; sourceTree = "<group>"; };
+		8D0995D55A09717B5F92526D /* Pods_AILearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AILearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0AAE05424CFD089BDED314 /* Pods-AILearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AILearn.release.xcconfig"; path = "Target Support Files/Pods-AILearn/Pods-AILearn.release.xcconfig"; sourceTree = "<group>"; };
+		F506753D2B0F54F600FD51F5 /* AILearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AILearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50675402B0F54F600FD51F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F50675412B0F54F600FD51F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F50675432B0F54F600FD51F5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F50675442B0F54F600FD51F5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F50675462B0F54F600FD51F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F50675472B0F54F600FD51F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F506754A2B0F54F600FD51F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F506754C2B0F54F800FD51F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F506754F2B0F54F800FD51F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F50675512B0F54F800FD51F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50675522B0F54F800FD51F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F50675592B14D09700FD51F5 /* NETM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NETM.h; sourceTree = "<group>"; };
+		F506755A2B14D09700FD51F5 /* NETM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETM.m; sourceTree = "<group>"; };
+		F506755C2B14D5D200FD51F5 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		F506755D2B14D5D200FD51F5 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		F50675602B14DDB900FD51F5 /* SparkChain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SparkChain.framework; sourceTree = "<group>"; };
+		F50675622B14DDD400FD51F5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F529786F2B1759E200218DA0 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		F52978702B1759E200218DA0 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		F52978722B17600600218DA0 /* UIColor+FFColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FFColor.h"; sourceTree = "<group>"; };
+		F52978732B17600600218DA0 /* UIColor+FFColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FFColor.m"; sourceTree = "<group>"; };
+		F52978792B24ACDD00218DA0 /* SparkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SparkTableViewCell.h; sourceTree = "<group>"; };
+		F529787A2B24ACDD00218DA0 /* SparkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SparkViewController.h; sourceTree = "<group>"; };
+		F529787B2B24ACDD00218DA0 /* SparkMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SparkMessage.h; sourceTree = "<group>"; };
+		F529787C2B24ACDD00218DA0 /* SparkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SparkTableViewCell.m; sourceTree = "<group>"; };
+		F529787D2B24ACDD00218DA0 /* SparkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SparkViewController.m; sourceTree = "<group>"; };
+		F529787E2B24ACDD00218DA0 /* SparkMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SparkMessage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F506753A2B0F54F600FD51F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50675632B14DDD500FD51F5 /* CoreTelephony.framework in Frameworks */,
+				AE7D2292E91F56B10F582B13 /* Pods_AILearn.framework in Frameworks */,
+				F50675642B14E06A00FD51F5 /* SparkChain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4655402EC86FE61ED9096B67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50675622B14DDD400FD51F5 /* CoreTelephony.framework */,
+				8D0995D55A09717B5F92526D /* Pods_AILearn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F50675342B0F54F600FD51F5 = {
+			isa = PBXGroup;
+			children = (
+				F506753F2B0F54F600FD51F5 /* AILearn */,
+				F506753E2B0F54F600FD51F5 /* Products */,
+				F5104F6D6C6118186D826B93 /* Pods */,
+				4655402EC86FE61ED9096B67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F506753E2B0F54F600FD51F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F506753D2B0F54F600FD51F5 /* AILearn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F506753F2B0F54F600FD51F5 /* AILearn */ = {
+			isa = PBXGroup;
+			children = (
+				F52978782B24ACDD00218DA0 /* SparkChain */,
+				F506755F2B14DDB900FD51F5 /* Framework */,
+				F50675402B0F54F600FD51F5 /* AppDelegate.h */,
+				F50675412B0F54F600FD51F5 /* AppDelegate.m */,
+				F50675432B0F54F600FD51F5 /* SceneDelegate.h */,
+				F50675442B0F54F600FD51F5 /* SceneDelegate.m */,
+				F50675592B14D09700FD51F5 /* NETM.h */,
+				F506755A2B14D09700FD51F5 /* NETM.m */,
+				F50675462B0F54F600FD51F5 /* ViewController.h */,
+				F50675472B0F54F600FD51F5 /* ViewController.m */,
+				F506755C2B14D5D200FD51F5 /* SettingViewController.h */,
+				F506755D2B14D5D200FD51F5 /* SettingViewController.m */,
+				F529786F2B1759E200218DA0 /* ChatViewController.h */,
+				F52978702B1759E200218DA0 /* ChatViewController.m */,
+				F52978722B17600600218DA0 /* UIColor+FFColor.h */,
+				F52978732B17600600218DA0 /* UIColor+FFColor.m */,
+				F50675492B0F54F600FD51F5 /* Main.storyboard */,
+				F506754C2B0F54F800FD51F5 /* Assets.xcassets */,
+				F506754E2B0F54F800FD51F5 /* LaunchScreen.storyboard */,
+				F50675512B0F54F800FD51F5 /* Info.plist */,
+				F50675522B0F54F800FD51F5 /* main.m */,
+			);
+			path = AILearn;
+			sourceTree = "<group>";
+		};
+		F506755F2B14DDB900FD51F5 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F50675602B14DDB900FD51F5 /* SparkChain.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		F5104F6D6C6118186D826B93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21761D6206201DE3FA9CBDF6 /* Pods-AILearn.debug.xcconfig */,
+				9B0AAE05424CFD089BDED314 /* Pods-AILearn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F52978782B24ACDD00218DA0 /* SparkChain */ = {
+			isa = PBXGroup;
+			children = (
+				F529787B2B24ACDD00218DA0 /* SparkMessage.h */,
+				F529787E2B24ACDD00218DA0 /* SparkMessage.m */,
+				F52978792B24ACDD00218DA0 /* SparkTableViewCell.h */,
+				F529787C2B24ACDD00218DA0 /* SparkTableViewCell.m */,
+				F529787A2B24ACDD00218DA0 /* SparkViewController.h */,
+				F529787D2B24ACDD00218DA0 /* SparkViewController.m */,
+			);
+			path = SparkChain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F506753C2B0F54F600FD51F5 /* AILearn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50675562B0F54F800FD51F5 /* Build configuration list for PBXNativeTarget "AILearn" */;
+			buildPhases = (
+				DDC927FDD34342D3924845FA /* [CP] Check Pods Manifest.lock */,
+				F50675392B0F54F600FD51F5 /* Sources */,
+				F506753A2B0F54F600FD51F5 /* Frameworks */,
+				F506753B2B0F54F600FD51F5 /* Resources */,
+				A0B7F34FC3AE8542D6896AAF /* [CP] Embed Pods Frameworks */,
+				F50675662B14E06A00FD51F5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AILearn;
+			productName = AILearn;
+			productReference = F506753D2B0F54F600FD51F5 /* AILearn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50675352B0F54F600FD51F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F506753C2B0F54F600FD51F5 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F50675382B0F54F600FD51F5 /* Build configuration list for PBXProject "AILearn" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F50675342B0F54F600FD51F5;
+			productRefGroup = F506753E2B0F54F600FD51F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F506753C2B0F54F600FD51F5 /* AILearn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F506753B2B0F54F600FD51F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50675502B0F54F800FD51F5 /* LaunchScreen.storyboard in Resources */,
+				F506754D2B0F54F800FD51F5 /* Assets.xcassets in Resources */,
+				F506754B2B0F54F600FD51F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0B7F34FC3AE8542D6896AAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AILearn/Pods-AILearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC927FDD34342D3924845FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AILearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50675392B0F54F600FD51F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F506755B2B14D09700FD51F5 /* NETM.m in Sources */,
+				F52978742B17600600218DA0 /* UIColor+FFColor.m in Sources */,
+				F50675482B0F54F600FD51F5 /* ViewController.m in Sources */,
+				F50675422B0F54F600FD51F5 /* AppDelegate.m in Sources */,
+				F50675532B0F54F800FD51F5 /* main.m in Sources */,
+				F529787F2B24ACDD00218DA0 /* SparkTableViewCell.m in Sources */,
+				F50675452B0F54F600FD51F5 /* SceneDelegate.m in Sources */,
+				F52978802B24ACDD00218DA0 /* SparkViewController.m in Sources */,
+				F52978812B24ACDD00218DA0 /* SparkMessage.m in Sources */,
+				F52978712B1759E200218DA0 /* ChatViewController.m in Sources */,
+				F506755E2B14D5D200FD51F5 /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F50675492B0F54F600FD51F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F506754A2B0F54F600FD51F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F506754E2B0F54F800FD51F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F506754F2B0F54F800FD51F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F50675542B0F54F800FD51F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F50675552B0F54F800FD51F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F50675572B0F54F800FD51F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21761D6206201DE3FA9CBDF6 /* Pods-AILearn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7K9T2NY6R;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AILearn/Framework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AILearn/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI英语老师";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytf.bizhi.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F50675582B0F54F800FD51F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0AAE05424CFD089BDED314 /* Pods-AILearn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7K9T2NY6R;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AILearn/Framework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AILearn/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI英语老师";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytf.bizhi.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50675382B0F54F600FD51F5 /* Build configuration list for PBXProject "AILearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50675542B0F54F800FD51F5 /* Debug */,
+				F50675552B0F54F800FD51F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50675562B0F54F800FD51F5 /* Build configuration list for PBXNativeTarget "AILearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50675572B0F54F800FD51F5 /* Debug */,
+				F50675582B0F54F800FD51F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50675352B0F54F600FD51F5 /* Project object */;
+}
