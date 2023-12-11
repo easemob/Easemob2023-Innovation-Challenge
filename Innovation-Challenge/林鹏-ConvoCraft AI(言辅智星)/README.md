@@ -15,12 +15,10 @@
 ### APP截图简要（如果未展示请多次刷新）
 
 <span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/92d5da4b-faa2-463e-b80a-f3cf59b6cd87" alt="211702093387_pic" style="width:200px"></span>
-
 <span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/ef08bdd5-2027-4652-8ae5-301f069e45a8" alt="191702092483_pic" style="width:200px"></span>
-
 <span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/1f3cccd4-e5a1-4c05-8284-5547c630c714" alt="2217020934w3_pic" style="width:200px"></span>
-
 <span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/f298e3cc-4d44-4003-b3c7-5cc6f8d0157d" alt="221702093467_pic" style="width:200px"></span>
+
 
 ### GIF展示（如果未展示请多次刷新）
 
