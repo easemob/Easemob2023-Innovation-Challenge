@@ -1,0 +1,7 @@
+.DS_Store
+.git/
+.hbuilderx/
+node_modules/
+unpackage/
+unpackage/
+package-lock.json
