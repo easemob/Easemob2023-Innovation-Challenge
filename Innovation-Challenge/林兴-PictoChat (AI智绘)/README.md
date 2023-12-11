@@ -20,18 +20,17 @@
 
 ### APP截图简要（如果未展示请多次刷新）
 
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/0e0bec1d-02fd-46e1-a9c1-f76d843b418a" alt="211702093387_pic" style="width:200px"></span>
-
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/6535c20a-34d4-4771-b9dc-745324957e3e" alt="191702092483_pic" style="width:200px"></span>
-
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/61de773a-2b2f-4537-8d90-04ee274bdc3f" alt="2217020934w3_pic" style="width:200px"></span>
-
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/d82421bc-0df8-4857-9424-2409d3399059" alt="221702093467_pic" style="width:200px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/4f23563e-d0b8-404b-9c56-bfdd62de934d" alt="211702093387_pic" style="width:200px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/4ee6be08-4076-4136-a47d-e404fd5bd037" alt="191702092483_pic" style="width:200px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/95a8fc6d-054f-4b5c-b759-c89c5b87af97" alt="2217020934w3_pic" style="width:200px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/ba5c4aa8-c610-45b6-b1d5-755781866a13" alt="221702093467_pic" style="width:200px"></span>
 
 ### GIF展示（如果未展示请多次刷新）
 
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/1edb6dc7-7f93-4358-ab39-8023a4352d26" alt="221702093467_pic" style="width:300px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/01d1920b-cedd-4523-806c-778fa1cc94ad" alt="221702093467_pic" style="width:300px"></span>
+
 
 ### 备注：
 
 ** **该工具基于环信IM实现，测试运行前请替换工程里的[OpenAI](https://platform.openai.com/api-keys)的apikey** **
+

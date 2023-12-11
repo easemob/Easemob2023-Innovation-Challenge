@@ -14,18 +14,19 @@
 
 ### APP截图简要（如果未展示请多次刷新）
 
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/0e0bec1d-02fd-46e1-a9c1-f76d843b418a" alt="211702093387_pic" style="width:200px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/92d5da4b-faa2-463e-b80a-f3cf59b6cd87" alt="211702093387_pic" style="width:200px"></span>
 
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/6535c20a-34d4-4771-b9dc-745324957e3e" alt="191702092483_pic" style="width:200px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/ef08bdd5-2027-4652-8ae5-301f069e45a8" alt="191702092483_pic" style="width:200px"></span>
 
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/61de773a-2b2f-4537-8d90-04ee274bdc3f" alt="2217020934w3_pic" style="width:200px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/1f3cccd4-e5a1-4c05-8284-5547c630c714" alt="2217020934w3_pic" style="width:200px"></span>
 
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/d82421bc-0df8-4857-9424-2409d3399059" alt="221702093467_pic" style="width:200px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/f298e3cc-4d44-4003-b3c7-5cc6f8d0157d" alt="221702093467_pic" style="width:200px"></span>
 
 ### GIF展示（如果未展示请多次刷新）
 
-<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/1edb6dc7-7f93-4358-ab39-8023a4352d26" alt="221702093467_pic" style="width:300px"></span>
+<span><img src="https://github.com/Jacky-LinPeng/Easemob2023-Innovation-Challenge/assets/15797691/aa084acf-44fc-4814-a678-e4f234884412" alt="221702093467_pic" style="width:300px"></span>
 
 ### 备注：
 
 ** **该工具基于环信IM实现，测试运行前请替换工程里的[OpenAI](https://platform.openai.com/api-keys)的apikey** **
+
