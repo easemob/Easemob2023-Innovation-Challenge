@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/sp_background"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="24dp"
+            android:src="@drawable/chatty_ai"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabMinWidth="40dp"
+            android:layout_gravity="end"
+            app:tabTextColor="@color/sl_tab"
+            app:tabIndicator="@drawable/sp_indicator"
+            app:tabIndicatorColor="#3974F6"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/trans" />
+    </LinearLayout>
+
+
+    <com.imchat.chanttyai.views.NoSwipeViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
