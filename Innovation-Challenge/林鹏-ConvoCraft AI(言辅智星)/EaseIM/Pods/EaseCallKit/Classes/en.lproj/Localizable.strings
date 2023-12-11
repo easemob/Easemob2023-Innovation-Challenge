@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by lixiaoming on 2021/12/2.
+  
+*/
+"voice" = "voice";
+"conferenece" = "conferenece";
+"video" = "video";
+"inviteInfo" = "Invite you to a %@ call";
+"Huangup" = "Hang up";
+"Answer" = "Answer";
+"Mute" = "Mute";
+"Hands-free" = "Hands-free";
+"Camera" = "Camera";
+"SwitchCamera" = "Change camera";
+"Call in progress" = "Call in progress";
+"waitforanswer" = "Wait for the other party to answer";
+"switchvoice" = "Convert to audio";
+"waitforanswer" = "Waiting for the other party to accept the invitation";
+"receiveCallInviteprompt" = "invited you to a video call";
+"remoteUnmute" = "The other party unmuted";
+"remoteMute" = "he other party muted";

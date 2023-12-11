@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EA7BCDF0-E036-40C8-B629-889D34E97E8C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60D0E6C2-AB90-4070-8786-7A13D4C3103D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EaseIM/Class/Chat/ChatInfoComponents/EMChatInfoViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-initWithCoversation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82EF341D-DE14-4626-8DB2-5AE75BBC6537"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EaseIM/Class/Chatroom/EMChatroomsViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-_setupSubviews"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D744E4F-8203-4211-99FA-7C6F2BE369B8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EaseIM/Class/Chat/EMChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1021"
+            endingLineNumber = "1021"
+            landmarkName = "-autoChat"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D744E4F-8203-4211-99FA-7C6F2BE369B8 - e9417755b7bbe5ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__32-[EMChatViewController autoChat]_block_invoke_2"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%8E%AF%E4%BF%A1/chat-ios/EaseIM/EaseIM/Class/Chat/EMChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1021"
+                  endingLineNumber = "1021"
+                  offsetFromSymbolStart = "193">
+               </Location>
+               <Location
+                  uuid = "0D744E4F-8203-4211-99FA-7C6F2BE369B8 - e9417755b7bbe5ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__32-[EMChatViewController autoChat]_block_invoke_2"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%8E%AF%E4%BF%A1/chat-ios/EaseIM/EaseIM/Class/Chat/EMChatViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1021"
+                  endingLineNumber = "1021"
+                  offsetFromSymbolStart = "183">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02CE6199-6C5A-4AD5-97B5-01A06D3CB84D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EaseIM/Class/Chat/EMChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1016"
+            endingLineNumber = "1016"
+            landmarkName = "-autoChat"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC914602-2B7A-4A20-BC9B-ABB381EA9152"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EaseIM/Class/Chat/EMChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1012"
+            endingLineNumber = "1012"
+            landmarkName = "-autoChat"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42F013AC-3B42-4404-AA63-704ADF6C8EE7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EaseIM/Class/FunExtend/LOT/OpenAISwiftHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "sendGTP(query:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "42F013AC-3B42-4404-AA63-704ADF6C8EE7 - 3b9da3ac06755088"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;OpenAISwift.OpenAI&lt;OpenAISwift.TextResult&gt;, OpenAISwift.OpenAIError&gt;) -&gt; () in EaseIM.OpenAISwiftHelper.sendGTP(query: Swift.String, completion: (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%8E%AF%E4%BF%A1/chat-ios/EaseIM/EaseIM/Class/FunExtend/LOT/OpenAISwiftHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "42F013AC-3B42-4404-AA63-704ADF6C8EE7 - 3b9da3ac06755088"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;OpenAISwift.OpenAI&lt;OpenAISwift.TextResult&gt;, OpenAISwift.OpenAIError&gt;) -&gt; () in EaseIM.OpenAISwiftHelper.sendGTP(query: Swift.String, completion: (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%8E%AF%E4%BF%A1/chat-ios/EaseIM/EaseIM/Class/FunExtend/LOT/OpenAISwiftHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "42F013AC-3B42-4404-AA63-704ADF6C8EE7 - 3b9da3ac06755088"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;OpenAISwift.OpenAI&lt;OpenAISwift.TextResult&gt;, OpenAISwift.OpenAIError&gt;) -&gt; () in EaseIM.OpenAISwiftHelper.sendGTP(query: Swift.String, completion: (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%8E%AF%E4%BF%A1/chat-ios/EaseIM/EaseIM/Class/FunExtend/LOT/OpenAISwiftHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "303">
+               </Location>
+               <Location
+                  uuid = "42F013AC-3B42-4404-AA63-704ADF6C8EE7 - 3b9da3ac067550e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;OpenAISwift.OpenAI&lt;OpenAISwift.TextResult&gt;, OpenAISwift.OpenAIError&gt;) -&gt; () in EaseIM.OpenAISwiftHelper.sendGTP(query: Swift.String, completion: (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%8E%AF%E4%BF%A1/chat-ios/EaseIM/EaseIM/Class/FunExtend/LOT/OpenAISwiftHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "42F013AC-3B42-4404-AA63-704ADF6C8EE7 - 3b9da3ac067550e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;OpenAISwift.OpenAI&lt;OpenAISwift.TextResult&gt;, OpenAISwift.OpenAIError&gt;) -&gt; () in EaseIM.OpenAISwiftHelper.sendGTP(query: Swift.String, completion: (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%8E%AF%E4%BF%A1/chat-ios/EaseIM/EaseIM/Class/FunExtend/LOT/OpenAISwiftHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "42F013AC-3B42-4404-AA63-704ADF6C8EE7 - 3b9da3ac067550e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;OpenAISwift.OpenAI&lt;OpenAISwift.TextResult&gt;, OpenAISwift.OpenAIError&gt;) -&gt; () in EaseIM.OpenAISwiftHelper.sendGTP(query: Swift.String, completion: (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%8E%AF%E4%BF%A1/chat-ios/EaseIM/EaseIM/Class/FunExtend/LOT/OpenAISwiftHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "303">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B31D3C9B-B97D-468A-BD68-EDD65FCEF83F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EaseIM/Class/Chat/EMChatViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "386"
+            endingLineNumber = "386"
+            landmarkName = "-messageCellDidClickQuote:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1E7EC90-7439-45E1-B6EE-73FF00DBA685"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Documents/xunlei/FORK/easeui_ios/EaseIMKit/EaseIMKit/Classes/Ext/EaseOpenAISwiftHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "sendCompletion(query:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A105894E-BAEF-4616-A31A-0F3D6CE4EBE9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Documents/xunlei/FORK/easeui_ios/EaseIMKit/EaseIMKit/Classes/Chat/ChatExtComponents/ChatToolBarComponents/ChatToolBarComponentsIncident/EaseChatViewController+ChatToolBarIncident.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "-chatToolBarAIAction"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B694FAC3-A37D-4E7C-8E6D-2212FD8B7012"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Documents/xunlei/FORK/easeui_ios/EaseIMKit/EaseIMKit/Classes/Ext/EaseCustomAIAlertView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "-send"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B694FAC3-A37D-4E7C-8E6D-2212FD8B7012 - 7195b9a24213870e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseCustomAIAlertContentView send]"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/xunlei/FORK/easeui_ios/EaseIMKit/EaseIMKit/Classes/Ext/EaseCustomAIAlertView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  uuid = "B694FAC3-A37D-4E7C-8E6D-2212FD8B7012 - 7195b9a24213870e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[EaseCustomAIAlertContentView send]"
+                  moduleName = "EaseIM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/xunlei/FORK/easeui_ios/EaseIMKit/EaseIMKit/Classes/Ext/EaseCustomAIAlertView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

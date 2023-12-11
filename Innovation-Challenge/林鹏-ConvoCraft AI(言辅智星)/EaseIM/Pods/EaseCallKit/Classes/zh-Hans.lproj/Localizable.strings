@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by lixiaoming on 2021/12/2.
+  
+*/
+"voice" = "语音";
+"conferenece" = "多人视频";
+"video" = "视频";
+"inviteInfo" = "邀请您进行%@通话";
+"Huangup" = "挂断";
+"Answer" = "接听";
+"Mute" = "静音";
+"Hands-free" = "免提";
+"Camera" = "摄像头";
+"SwitchCamera" = "切换摄像头";
+"Call in progress" = "通话中";
+"waitforanswer" = "等待接听";
+"switchvoice" = "转音频";
+"waitforanswer" = "正在等待对方接受邀请";
+"receiveCallInviteprompt" = "邀请你进行音视频通话";
+"remoteUnmute" = "对方打开了音频";
+"remoteMute" = "对方关闭了音频";

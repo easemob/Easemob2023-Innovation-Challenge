@@ -1,0 +1,6 @@
+framework module OpenAISwift {
+  umbrella header "OpenAISwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

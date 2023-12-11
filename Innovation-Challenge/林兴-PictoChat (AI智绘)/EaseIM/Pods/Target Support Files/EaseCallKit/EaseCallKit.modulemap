@@ -1,0 +1,6 @@
+framework module EaseCallKit {
+  umbrella header "EaseCallKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
