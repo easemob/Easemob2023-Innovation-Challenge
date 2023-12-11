@@ -1,0 +1,17 @@
+{
+  "name": "baida",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.4.28",
+    "easemob-websdk": "latest",
+    "sass": "^1.69.5",
+    "sass-loader": "^10.1.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
