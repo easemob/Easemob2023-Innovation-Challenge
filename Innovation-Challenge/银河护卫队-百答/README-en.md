@@ -53,37 +53,45 @@
         </li>
       </ul>
     </li>
-    <li><a href="#2-功能介绍</a></li>
+	<li>
+      <a href="#2-系统架构">系统架构</a>
       <ul>
-        <li><a href="#2.1-系统功能">2.1 系统功能</a></li>
+        <li><a href="#2.1-技术架构图">2.1 技术架构图</a></li>
+        <li><a href="#2.2-业务架构图">2.2 业务架构图</a></li>
+	  </ul>
+	</li>
+    <li><a href="#3-功能介绍</a></li>
+      <ul>
+        <li><a href="#3.1-系统功能">3.1 系统功能</a></li>
           <ul>
-            <li><a href="#2.1.1-配置说明">2.1.1 配置说明</a></li>
-            <li><a href="#2.1.2-用户登录">2.1.2 用户登录</a></li>
-            <li><a href="#2.1.3-用户注册">2.1.3 用户注册</a></li>
-            <li><a href="#2.1.4-服务配置">2.1.4 服务配置</a></li>
+            <li><a href="#3.1.1-配置说明">3.1.1 配置说明</a></li>
+            <li><a href="#3.1.2-用户登录">3.1.2 用户登录</a></li>
+            <li><a href="#3.1.3-用户注册">3.1.3 用户注册</a></li>
+            <li><a href="#3.1.4-服务配置">3.1.4 服务配置</a></li>
           </ul>
-        <li><a href="#2.2-业务功能">2.2 业务功能</a></li>
+        <li><a href="#3.2-业务功能">3.2 业务功能</a></li>
           <ul>
-            <li><a href="#2.2.1-好友列表">2.2.1 好友列表</a></li>
-            <li><a href="#2.2.2-探索">2.2.2 探索</a></li>
-            <li><a href="#2.2.3-聊天">2.2.3 聊天</a></li>
-            <li><a href="#2.2.4-用户信息">2.2.4 用户信息</a></li>
-            <li><a href="#2.2.5-退出登录">2.2.5 退出登录</a></li>
+            <li><a href="#3.2.1-好友列表">3.2.1 好友列表</a></li>
+            <li><a href="#3.2.2-探索">3.2.2 探索</a></li>
+            <li><a href="#3.2.3-聊天">3.2.3 聊天</a></li>
+            <li><a href="#3.2.4-用户信息">3.2.4 用户信息</a></li>
+            <li><a href="#3.2.5-退出登录">3.2.5 退出登录</a></li>
           </ul>
-        <li><a href="#2.3 异常提示">2.3 异常提示</a></li>
+        <li><a href="#3.3 异常提示">3.3 异常提示</a></li>
           <ul>
-            <li><a href="#2.3.1-登录失败">2.3.1 登录失败</a></li>
-            <li><a href="#2.3.2-注册用户名已存在">2.3.2 注册用户名已存在</a></li>
-            <li><a href="#2.3.3-消息发送频繁">2.3.3 消息发送频繁</a></li>
+            <li><a href="#3.3.1-登录失败">3.3.1 登录失败</a></li>
+            <li><a href="#3.3.2-注册用户名已存在">3.3.2 注册用户名已存在</a></li>
+            <li><a href="#3.3.3-消息发送频繁">3.3.3 消息发送频繁</a></li>
           </ul>
       </ul>
-    <li><a href="#3-技术组件">技术组件</a></li>
-    <li><a href="#4-快速上手">快速上手</a></li>
-    <li><a href="#5-开源协议">开源协议</a></li>
-    <li><a href="#6-联系作者">联系作者</a></li>
-    <li><a href="#7-致谢">致谢</a></li>
+    <li><a href="#4-技术组件">技术组件</a></li>
+    <li><a href="#5-快速上手">快速上手</a></li>
+    <li><a href="#6-开源协议">开源协议</a></li>
+    <li><a href="#7-联系作者">联系作者</a></li>
+    <li><a href="#8-致谢">致谢</a></li>
   </ol>
 </details>
+
 
 <!-- ABOUT THE PROJECT -->
 
@@ -171,14 +179,25 @@
 
 > **更多场景正在探索中……**
 
-## 2 功能介绍
-### 2.1 系统功能
-#### 2.1.1 配置说明
+## 2 系统架构
+
+#### 2.1 技术架构图
+
+![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/architecture.png "技术架构图")
+
+#### 2.2 业务架构图
+
+![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/architecture_chat.png "业务架构图")
+
+## 3 功能介绍
+
+### 3.1 系统功能
+#### 3.1.1 配置说明
 * 配置文件utils/WebIM.js：配置自己的环信IM的host和appKey等信息
 * 配置文件utils/Config.js：配置自己的默认后端服务端口
 * 支持Android、IOS等APP，支持微信小程序，理论上支持阿里、百度和字节系小程序，时间问题未测试
 * 推荐微信小程序访问，免安装方便快捷
-#### 2.1.2 用户登录
+#### 3.1.2 用户登录
 * 首次启动应用显示登录页面，输入用户名密码即可登录
 * 贴心的提供长按显示密码明文
 * 登录失败显示失败原因
@@ -186,7 +205,7 @@
 
 ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/login.png "登录界面")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/login2.png "登录界面")
 
-#### 2.1.3 用户注册
+#### 3.1.3 用户注册
 
 * 新用户需注册才可使用，注册页面复用登录页面
 
@@ -207,28 +226,28 @@
 * 目前已有的机器人账号均是提前创建好的
 
   ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/register.png "注册界面") ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/register2.png "注册成功")
-#### 2.1.4 服务配置
+#### 3.1.4 服务配置
 
 * 配置后台服务地址：用户可自定义后台服务。由于测试是白嫖的临时服务器只有几天使用期限，考虑到小程序上线审核周期问题，发布后不方便修改，通过配置该地址，可以实现用户端更换服务接口
 * 服务appkey配置：用户可以自定义大模型appkey，目前限时白嫖的通义千问有使用频次限制，自定义后则优先使用自定义的key
 * 以上接口留空则均使用默认配置，自己无设置导致不能使用也可以删掉后保存一下即可
 
-### 2.2 业务功能
-#### 2.2.1 好友列表
+### 3.2 业务功能
+#### 3.2.1 好友列表
 * 登录后进入应用的第一个页面，显示好友列表
 * 显示分组和昵称等信息
 * 添加好友和建群功能
 
 ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/friends.png "好友分组列表")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/friends2.png "快速定位好友")
 
-#### 2.2.2 探索
+#### 3.2.2 探索
 * 用于展示更多创意玩法和教程
 * 更多适用场景
 * 该页面功能后期完善
 
 ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/explore.png "探索页面")
 
-#### 2.2.3 聊天
+#### 3.2.3 聊天
 * 从通讯录点击机器人或好友，进入聊天界面
 * 聊天界面显示对方昵称，发送消息后会显示自己和对方头像
 * 确保用户合法性，聊天界面会验证用户accessToken有效性
@@ -240,7 +259,7 @@
 
 ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/chat1.png "聊天")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/chat2.png "聊天")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/chat3.png  "聊天")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/chat4.png "聊天")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/chat5.png "聊天")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/chat6.png "聊天")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/chat7.png "聊天")![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/chat8.png "清理聊天")
 
-#### 2.2.4 用户信息
+#### 3.2.4 用户信息
 * 可查看用户头像、昵称、签名、用户名、以及环信IM中的uuid、用户类型、accessToken等信息
 * accessToken默认隐藏，可显示查看
 * 用户信息维护
@@ -248,13 +267,13 @@
 
 ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/userInfo.png "用户信息")
 
-#### 2.2.5 退出登录
+#### 3.2.5 退出登录
 * 用户再次确认退出后，退出当前用户登录状态
 * 清除所有用户缓存信息
 * 跳转到登录页面
-### 2.3 异常提示
+### 3.3 异常提示
 
-#### 2.3.1 登录失败
+#### 3.3.1 登录失败
 
 * 用户名或密码错误，导致登录失败
 
@@ -263,20 +282,20 @@
 
   ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/warning_no_username.png "登录失败")
 
-#### 2.3.2 注册用户名已存在
+#### 3.3.2 注册用户名已存在
 * 环信IM中用户名在当前应用作为唯一标识，不能与其他人重复
 * 遇到提示更换用户名即可，后续显示主要为用户昵称，昵称不要求唯一
 
 
   ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/warning_id_not_unique.png "注册用户名已存在")
-#### 2.3.2 消息发送频繁
+#### 3.3.2 消息发送频繁
 * 由于大模型算力成本较高，目前很多都会限制用户请求频率，尤其是免费用户
 * 如果自己有key，可以使用自己的key
 * 如果没有key，稍等片刻再次请求即可
 ![](https://gitee.com/hbeu/easemob2023-innovation-challenge/raw/master/Screenshots/warning_msg_frequent.png "消息发送频繁-目前没复现出来，下次碰到再补图")
 
 <!-- ROADMAP -->
-## 3 技术组件
+## 4 技术组件
 - [x] easemob-websdk
 - [x] @dcloudio/uni-ui
 - [x] fastapi
@@ -284,7 +303,7 @@
 - [x] dashscope
 
 <!-- GETTING STARTED -->
-## 4 快速上手
+## 5 快速上手
 
 1. 克隆代码 (`git clone https://github.com/supmaster/Easemob2023-Innovation-Challenge.git`)
 2. 进入目录`Easemob2023-Innovation-Challenge/Innovation-Challenge/银河护卫队-百答/`
@@ -295,12 +314,12 @@
 7. 服务端为了支持更多的业务场景，尚在继续开发中，暂未开源，可自己安装数据格式自行实现
 
 <!-- LICENSE -->
-## 5 开源协议
+## 6 开源协议
 
 基于 MIT 开源协议. 点击 `LICENSE` 查看更多信息
 
 <!-- CONTACT -->
-## 6 联系作者
+## 7 联系作者
 
 Supmaster - [@github_handle](https://github.com/supmaster) - email
 
@@ -308,7 +327,7 @@ Project Link: [https://github.com/supmaster/Easemob2023-Innovation-Challenge](ht
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 7 致谢
+## 8 致谢
 
 - [x] [环信](https://console.easemob.com)
 - [x] [IM Geek]()
