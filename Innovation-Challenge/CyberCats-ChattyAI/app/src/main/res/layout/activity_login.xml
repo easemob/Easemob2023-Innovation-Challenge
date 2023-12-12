@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/sp_background"
+    android:paddingTop="150dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="78dp"
+        android:src="@drawable/loginicon"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:paddingVertical="5dp"
+        android:textSize="17sp"
+        android:paddingStart="20dp"
+        android:textColor="@color/white"
+        android:hint="请输入手机号码"
+        android:maxLength="11"
+        android:textColorHint="#eeeeee"
+        android:inputType="phone"
+        android:layout_height="48dp"
+        android:background="@drawable/sp_2f3437"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="next"
+        android:background="@drawable/sp_btn"
+        android:textColor="@color/white"
+        android:text="登录" />
+</LinearLayout>

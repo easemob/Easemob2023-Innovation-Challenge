@@ -1,0 +1,91 @@
+PODS:
+  - AgoraRtcEngine_iOS/RtcBasic (4.1.1)
+  - Bugly (2.5.93)
+  - EaseCallKit (4.0.0):
+    - AgoraRtcEngine_iOS/RtcBasic (~> 4.1.1)
+    - HyphenateChat (>= 3.9.0)
+    - Masonry
+    - SDWebImage
+  - EaseIMKit (4.2.0):
+    - EMVoiceConvert (= 0.1.0)
+    - HyphenateChat (>= 4.2.0)
+    - lottie-ios
+    - OpenAISwift
+  - EMVoiceConvert (0.1.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HyphenateChat (4.2.0)
+  - lottie-ios (4.3.3)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.6)
+  - OpenAISwift (1.3.0)
+  - SDWebImage (5.18.5):
+    - SDWebImage/Core (= 5.18.5)
+  - SDWebImage/Core (5.18.5)
+  - TFHpple (2.0.0)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_iOS/RtcBasic
+  - Bugly
+  - EaseCallKit
+  - "EaseIMKit (from `git@github.com:Jacky-LinPeng/easeui_ios.git`)"
+  - FMDB
+  - HyphenateChat (= 4.2.0)
+  - lottie-ios (= 4.3.3)
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - "OpenAISwift (from `git@github.com:Jacky-LinPeng/OpenAISwift.git`)"
+  - SDWebImage
+  - TFHpple
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AgoraRtcEngine_iOS
+    - Bugly
+    - EaseCallKit
+    - EMVoiceConvert
+    - FMDB
+    - HyphenateChat
+    - lottie-ios
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SDWebImage
+    - TFHpple
+
+EXTERNAL SOURCES:
+  EaseIMKit:
+    :git: "git@github.com:Jacky-LinPeng/easeui_ios.git"
+  OpenAISwift:
+    :git: "git@github.com:Jacky-LinPeng/OpenAISwift.git"
+
+CHECKOUT OPTIONS:
+  EaseIMKit:
+    :commit: 1dc7f393e4a74cb2bc073fc9a11843e242786dc5
+    :git: "git@github.com:Jacky-LinPeng/easeui_ios.git"
+  OpenAISwift:
+    :commit: c36943c3fae758f7623157c3b33035e109d33a17
+    :git: "git@github.com:Jacky-LinPeng/OpenAISwift.git"
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: df216a18a01c30fba926565d889c9542319252ac
+  Bugly: b8715e6ec4004b7f7fbffab0643ba80545aee3da
+  EaseCallKit: c2d8ecfc09c2c491d03e6ce3cbba92e45e24c0db
+  EaseIMKit: 4faeeed215c4086c11b1f4b0e56af4345832e061
+  EMVoiceConvert: 32a0eaada94d93c151a5abd53ee174cd4e63b01f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HyphenateChat: e43d1ec9ccf404eeb2ee7d3265cd12a4e83f0d3a
+  lottie-ios: 25e7b2675dad5c3ddad369ac9baab03560c5bfdd
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  OpenAISwift: 9447a77c8098754f5fa61b9f6e8ab9e2ce592fbd
+  SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
+  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
+
+PODFILE CHECKSUM: 78807ad14d43ef5bd1c297ef0f48e2d42e7025f2
+
+COCOAPODS: 1.12.1

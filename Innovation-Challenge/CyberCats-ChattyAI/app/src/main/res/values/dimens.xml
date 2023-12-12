@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="msg_corner">20dp</dimen>
+    <dimen name="chat_time">13sp</dimen>
+</resources>

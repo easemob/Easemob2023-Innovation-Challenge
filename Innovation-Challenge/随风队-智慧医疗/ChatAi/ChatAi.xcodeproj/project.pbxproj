@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A14F83C2B22F99800ED1607 /* GetRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A14F83B2B22F99800ED1607 /* GetRecordView.swift */; };
+		0A14F83F2B2328C700ED1607 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A14F83D2B2328C700ED1607 /* CustomCell.swift */; };
+		0A14F8402B2328C700ED1607 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A14F83E2B2328C700ED1607 /* CustomCell.xib */; };
 		0A284C6E2B0DDD68007B56D6 /* QianFanManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A284C6D2B0DDD68007B56D6 /* QianFanManage.swift */; };
 		0A4E221C2B0EF63300CC0521 /* CreateArchiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E221A2B0EF63300CC0521 /* CreateArchiveVC.swift */; };
 		0A4E221D2B0EF63300CC0521 /* CreateArchiveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E221B2B0EF63300CC0521 /* CreateArchiveVC.xib */; };
@@ -49,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A14F83B2B22F99800ED1607 /* GetRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecordView.swift; sourceTree = "<group>"; };
+		0A14F83D2B2328C700ED1607 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		0A14F83E2B2328C700ED1607 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		0A284C6D2B0DDD68007B56D6 /* QianFanManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QianFanManage.swift; sourceTree = "<group>"; };
 		0A4E221A2B0EF63300CC0521 /* CreateArchiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateArchiveVC.swift; sourceTree = "<group>"; };
 		0A4E221B2B0EF63300CC0521 /* CreateArchiveVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateArchiveVC.xib; sourceTree = "<group>"; };
@@ -192,6 +198,9 @@
 				0A647DA52B109F29008B7A4A /* ArchiveCell.xib */,
 				0ADB86082B18327E00EBD145 /* RecordCell.swift */,
 				0ADB86092B18327E00EBD145 /* RecordCell.xib */,
+				0A14F83B2B22F99800ED1607 /* GetRecordView.swift */,
+				0A14F83D2B2328C700ED1607 /* CustomCell.swift */,
+				0A14F83E2B2328C700ED1607 /* CustomCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,6 +306,7 @@
 			files = (
 				0A4E22232B0F381300CC0521 /* ConsultCell.xib in Resources */,
 				0AC920602B06085B00A2D65A /* ConversationCell.xib in Resources */,
+				0A14F8402B2328C700ED1607 /* CustomCell.xib in Resources */,
 				0A6C29E42B05C8A30070699D /* LaunchScreen.storyboard in Resources */,
 				0A6C29E12B05C8A30070699D /* Assets.xcassets in Resources */,
 				0A4E22272B0F39ED00CC0521 /* MineVC.xib in Resources */,
@@ -373,6 +383,7 @@
 				0A4E221F2B0F371B00CC0521 /* ConsultVC.swift in Sources */,
 				0AC9205A2B0606E800A2D65A /* Foundation+Extension.swift in Sources */,
 				0AC920402B06017B00A2D65A /* LoginVC.swift in Sources */,
+				0A14F83F2B2328C700ED1607 /* CustomCell.swift in Sources */,
 				0A4E22222B0F381300CC0521 /* ConsultCell.swift in Sources */,
 				0A7B46752B06237F0073C0F1 /* MineTextCell.swift in Sources */,
 				0ADB86072B182AE100EBD145 /* RecordVC.swift in Sources */,
@@ -380,6 +391,7 @@
 				0A6C29EC2B05CB690070699D /* ConversationVC.swift in Sources */,
 				0AC920632B06126200A2D65A /* ChatVC.swift in Sources */,
 				0A6C29DC2B05C8A20070699D /* ViewController.swift in Sources */,
+				0A14F83C2B22F99800ED1607 /* GetRecordView.swift in Sources */,
 				0AC920562B0606E800A2D65A /* NetURL.swift in Sources */,
 				0A4E22262B0F39ED00CC0521 /* MineVC.swift in Sources */,
 				0AC920542B0606E800A2D65A /* UIView+Extension.swift in Sources */,
@@ -545,8 +557,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,7 +566,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChatAi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyytp.proj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -578,8 +590,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,7 +599,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChatAi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyytp.proj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

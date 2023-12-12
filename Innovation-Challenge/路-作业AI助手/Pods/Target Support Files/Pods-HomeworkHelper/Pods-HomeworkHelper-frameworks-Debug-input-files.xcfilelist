@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-HomeworkHelper/Pods-HomeworkHelper-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcKit/AgoraRtcKit.framework/AgoraRtcKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraDav1d/AgoraDav1d.framework/AgoraDav1d
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Agorafdkaac/Agorafdkaac.framework/Agorafdkaac
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Agoraffmpeg/Agoraffmpeg.framework/Agoraffmpeg
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraSoundTouch/AgoraSoundTouch.framework/AgoraSoundTouch
+${PODS_XCFRAMEWORKS_BUILD_DIR}/HyphenateChat/HyphenateChat.framework/HyphenateChat

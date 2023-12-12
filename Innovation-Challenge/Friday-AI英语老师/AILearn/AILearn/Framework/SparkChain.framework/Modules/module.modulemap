@@ -1,0 +1,6 @@
+framework module SparkChain {
+  umbrella header "SparkChain.h"
+
+  export *
+  module * { export * }
+}
