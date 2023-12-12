@@ -89,8 +89,8 @@
         _chatController = [EaseChatViewController initWithConversationId:conversationId
                                                     conversationType:conType
                                                         chatViewModel:viewModel];
-        _chatController.client_ID = @"xxxxxxxxx";
-        _chatController.client_Screct = @"xxxxxxxxx";
+        _chatController.client_ID = @"IGxpkywFzmVDPHoOmKl1ziRd";
+        _chatController.client_Screct = @"88kyN5PQTU9iVq4i8YVEHkZ89zqWCSMR";
         [_chatController setEditingStatusVisible:[EMDemoOptions sharedOptions].isChatTyping];
         _chatController.delegate = self;
 //        _chatController.actk = [access_TK copy];
