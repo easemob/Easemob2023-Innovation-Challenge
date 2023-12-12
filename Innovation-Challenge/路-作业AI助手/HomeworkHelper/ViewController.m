@@ -146,7 +146,7 @@
             [s synchronize];
         }];
         [alert addAction:action];
-        [self presentViewController:alert animated:true completion:nil];
+       // [self presentViewController:alert animated:true completion:nil];
     }
     
     
