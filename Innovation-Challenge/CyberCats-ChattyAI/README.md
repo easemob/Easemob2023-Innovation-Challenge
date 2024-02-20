@@ -37,6 +37,6 @@
 
 使用AndroidStudio运行项目
 
-## 安装包
 
-[android安装包](/chatty_v1.0.apk)
+##IM相关配置
+前往com.imchat.chanttyai/base/App.java，initIm()方法内修改环信appkey
