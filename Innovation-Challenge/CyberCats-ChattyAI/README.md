@@ -38,5 +38,5 @@
 使用AndroidStudio运行项目
 
 
-##IM相关配置
+## IM相关配置
 前往com.imchat.chanttyai/base/App.java，initIm()方法内修改环信appkey
