@@ -38,5 +38,9 @@
 使用AndroidStudio运行项目
 
 
-## IM相关配置
+## IM 相关配置
 前往com.imchat.chanttyai/base/App.java，initIm()方法内修改环信appkey
+
+## 后端地址修改
+
+前往com.imchat.chanttyai/base/Constants.java，修改HTTP_HOST值为部署域名或IP
