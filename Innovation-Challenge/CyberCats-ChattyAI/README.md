@@ -57,9 +57,9 @@
     > 请确保MiniMax有余额，否则可能导致调用MiniMax的调用失败
     [MiniMax的快速开始](https://api.minimax.chat/v1/text/chatcompletion_pro?GroupId=)
 
-## 前端修改appkey：
+## 前端修改Appkey：
 
-前往com.imchat.chanttyai/base/Constants.java，修改APP_KEY值为环信appkey
+前往com.imchat.chanttyai/base/Constants.java，修改APP_KEY值为自己在环信的Appkey
 
 ## 后端地址修改
 
